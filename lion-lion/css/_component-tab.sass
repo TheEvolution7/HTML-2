@@ -1,0 +1,25 @@
+.tab-wrapper
+    .tab
+        margin-top: size-pc(50, rem)
+        display: flex
+        list-style: none
+        justify-content: center
+        li 
+            a
+                color: #fff
+                text-decoration: unset
+                font-size: size-pc(28, rem)
+                text-transform: uppercase
+                opacity: 0.5
+                transition: all .3s ease
+                @include sp
+                    font-size: size-sp(14, rem) 
+                &:hover
+                    opacity: 1
+            + li 
+                margin-left: size-pc(15, rem)
+                border-left: 3px solid $color-red
+                padding-left: size-pc(15, rem)
+            &.active 
+                a
+                    opacity: 1

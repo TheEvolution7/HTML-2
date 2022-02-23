@@ -1,0 +1,273 @@
+.l-home-page
+  width: 100vw
+  .l-header
+    .l-logo-header
+      opacity: 0
+      pointer-events: none
+  .l-footer
+    position: fixed
+    top: auto
+    left: 0
+    bottom: 0
+    width: 100%
+  .kv
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    height: 100vh
+    position: relative
+    overflow: hidden
+    .kv-logo-wrap
+      position: relative
+    .logo
+      width: 12.5em
+      transform-origin: top left
+      @include sp
+        width: size-sp(120, rem)
+      &-box
+        visibility: visible
+        opacity: 0
+      &-effect
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        text-align: center
+        display: none
+        z-index: 10
+        &.fixLogo
+          position: fixed
+          top: size-pc(66.2, vw)
+
+    .l-icon-scroll-down
+      margin: 1.5em 0 0 0
+  .l-section
+    // min-height: 100vh
+    padding: size-pc(40, rem) 0 size-pc(40, rem)
+    overflow: hidden
+    @include sp
+      padding: size-sp(40, rem) 0 size-sp(40, rem)
+    &:last-child
+      padding-bottom: size-pc(100, rem)
+      @media screen and ( max-height: 800px )
+        padding-bottom: size-pc(60, rem)
+      @include sp
+        padding-bottom: size-sp(40, rem)
+        padding: size-sp(40, rem) 0 size-sp(40, rem)
+    &-service
+      .group-button
+        text-align: center
+        margin: size-pc(40, rem) 0 0 0
+    &-network
+      .btn-readmore
+        margin: 2.75em 0 0 0
+      .group-network
+        display: flex
+        align-items: center
+        justify-content: center
+        position: relative
+        margin: 3.5em auto 0 auto
+        border: none
+        max-width: size-sp(1120, rem)
+        @media screen and ( max-width: 1440px )
+          max-width: size-sp(920, rem)
+        @include sp
+          flex-direction: column
+          max-width: size-sp(222, rem)
+        >div 
+          flex: 0 0 33.333333%
+          max-width: 33.333333%
+          width: 100%
+          @include sp
+            flex: 0 0 100%
+            max-width: 100%
+        .video-box
+          flex: 0 0 100%
+          max-width: 100%
+          .desktop-img 
+            display: block
+            object-position: center size-sp(-270, rem)
+            @media screen and ( max-width: 1440px )
+              object-position: center size-sp(-210, rem)
+            @media screen and ( max-width: 991.82px )
+              display: none
+          .mobile-img
+            display: none
+            @media screen and ( max-width: 991.82px )
+              display: block 
+               
+        video,.video-box,img
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          object-fit: cover
+          // object-position: center
+          // object-position: center -350px
+          border-radius: 5em 0 5em 0
+          opacity: 0
+          @include sp
+            object-position: center
+            border-radius: size-sp(30, rem) 0 size-sp(30, rem) 0
+    &-ourwork
+      padding-bottom: size-sp(80, rem)
+      .group-ourwork
+        .slick-slide
+          position: relative
+          @media screen and ( min-width: 1024px ) 
+            &:hover
+              z-index: 10
+              transform-origin: center
+              transform: scale(1.05)!important
+              > div 
+                opacity: 1!important
+        @include full
+          .slick-active
+            > div
+              float: right
+              transform-origin: center right
+              transform: scale(1) translate(0%, 0)
+              z-index: 0
+              opacity: 0.6
+          .slick-active + .slick-active
+            > div
+              float: left
+              transform-origin: center left
+              transform: scale(1.2) translate(-5%, 0)
+              z-index: 1
+              opacity: 0.7
+          .slick-active + .slick-active + .slick-active
+            > div
+              float: none
+              transform-origin: center
+              margin: 0 auto
+              transform: scale(1.4)
+              z-index: 2
+              opacity: 1
+          .slick-active + .slick-active + .slick-active + .slick-active
+            > div
+              float: right
+              transform-origin: center right
+              transform: scale(1.2) translate(5%, 0)
+              z-index: 1
+              opacity: 0.7
+          .slick-active + .slick-active + .slick-active + .slick-active + .slick-active
+            > div
+              float: left
+              transform-origin: center left
+              transform: scale(1) translate(0%, 0)
+              z-index: 0
+              opacity: 0.6
+        @include pc
+          margin: 2.5em 0 0 0
+          width: 100%
+          .slick-active
+            > div
+              float: right
+              transform-origin: center right
+              transform: scale(1) translate(0%, 0)
+              z-index: 0
+              opacity: 0.6
+          .slick-active + .slick-active
+            > div
+              float: left
+              transform-origin: center left
+              transform: scale(1.2) translate(-5%, 0)
+              z-index: 1
+              opacity: 0.7
+          .slick-active + .slick-active + .slick-active
+            > div
+              float: none
+              transform-origin: center
+              margin: 0 auto
+              transform: scale(1.4)
+              z-index: 2
+              opacity: 1
+          .slick-active + .slick-active + .slick-active + .slick-active
+            > div
+              float: right
+              transform-origin: center right
+              transform: scale(1.2) translate(5%, 0)
+              z-index: 1
+              opacity: 0.7
+          .slick-active + .slick-active + .slick-active + .slick-active + .slick-active
+            > div
+              float: left
+              transform-origin: center left
+              transform: scale(1) translate(0%, 0)
+              z-index: 0
+              opacity: 0.6
+        @include sp
+          margin: size-sp(60, rem) 0 0 0
+        
+        .slick-slide
+          transition: all .3s ease
+          height: auto
+              
+          @include full
+            padding: 5rem 0
+          @include pc
+            padding: 3rem 0
+            // &:nth-child(1),.slick-active
+            //   > div
+            //     float: right
+            //     transform-origin: center right
+            //     transform: scale(1) translate(0%, 0)
+            //     z-index: 0
+            // &:nth-child(2),.slick-active + .slick-active
+            //   > div
+            //     float: left
+            //     transform-origin: center left
+            //     transform: scale(1.2) translate(-5%, 0)
+            //     z-index: 1
+            // &:nth-child(3),.slick-active + .slick-active + .slick-active
+            //   > div
+            //     margin: 0 auto
+            //     transform: scale(1.4)
+            //     z-index: 2
+            // &:nth-child(4),.slick-active + .slick-active + .slick-active + .slick-active
+            //   > div
+            //     float: right
+            //     transform-origin: center right
+            //     transform: scale(1.2) translate(5%, 0)
+            //     z-index: 1
+            // &:nth-child(5),.slick-active + .slick-active + .slick-active + .slick-active + .slick-active
+            //   > div
+            //     float: left
+            //     transform-origin: center left
+            //     transform: scale(1) translate(0%, 0)
+            //     z-index: 0
+        .l-ourwork
+      
+    &-newsletter
+      .l-section-title
+        margin: size-pc(80, rem) 0 0 0
+        @include sp
+          margin: size-sp(100, rem) 0 0 0
+
+      .group-button
+        margin: size-pc(40, rem) 0 0 0
+        @include sp
+          margin: size-sp(20, rem) 0 0 0
+
+        >div
+          &:not(:first-child)
+            margin: 1em 0 0 0
+      .l-form-newsletter
+        margin-top: size-pc(30, rem)
+        @include sp
+          margin-top: size-sp(20, rem)
+    &-submitbrief
+      .l-form-submitbrief
+        margin: 3em 0 0 0
+      .group-button
+        margin: 2em 0 0 0
+        button
+          &:first-child
+            margin: 0 5em 0 0
+  #trigger1
+    position: fixed
+    top: 50%
+    right: 0

@@ -1,0 +1,476 @@
+// tags
+.l
+  &-tags
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    list-style: none
+    line-height: calc(40 / 20)
+    text-align: center
+    border-radius: 1em 0 1em 0
+    background: rgba(#ccc, 0.1)
+    margin: 0 auto
+    padding: size-pc(40, rem) size-pc(50, rem)
+    max-width: 1166px
+    @include sp
+      border-radius: size-pc(38, rem) 0 size-pc(38, rem) 0
+    li
+      font-size: size-pc(20, rem)
+      @include sp
+        display: block
+        width: 100%
+        font-size: size-sp(12, rem)
+      @include pc
+        display: inline-block
+        &::after
+          content: '│'
+          color: $color-red
+        &:last-child
+          &::after
+            display: none
+  &-article
+    display: flex
+    flex-direction: column
+    // max-width: 459.5px
+    color: $color-white
+    margin: 3em 0 0 0
+    &:hover
+      img 
+        transform: scale(1.05)
+      .title
+        color: $color-red
+    a
+      text-decoration: none
+    .img
+      padding: 0 0 52.8835690968% 0
+      background: $color-red
+      position: relative
+      overflow: hidden
+      img
+        position: absolute
+        width: 100%
+        height: 100%
+        object-fit: cover
+        top: 0
+        left: 0
+        transition: all .3s ease
+    .title
+      transition: all .3s ease
+      text-decoration: none
+      color: $color-white
+      font-weight: bold
+      margin: 1em 0 0 0
+      font-size: size-pc(20, rem)
+      @include sp
+        font-size: size-sp(12, rem)
+    .date
+      text-decoration: none
+      color: $color-red
+      font-weight: 600
+      margin: 1em 0 0 0
+  &-ourwork
+    position: relative
+    border: none
+    border-radius: 4em 0 4em 0
+    background: $color-gray08
+    width: size-pc(250, rem)
+    transition: all .3s ease
+    margin: 0 auto
+    @include sp
+      width: size-sp(240, rem)
+    &:hover
+      background: $color-red09
+      cursor: pointer
+    
+    &::before
+      content: ''
+      width: 100%
+      padding: 0 0 100% 0
+      display: block
+    .content
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      .img
+        width: 100%
+        height: 35.7142857143%
+        margin: 0em 0 1em 0
+        text-align: center
+        display: flex
+        justify-content: center
+        align-items: center
+        img 
+          max-width: 100%
+          max-height: 100%
+      .country
+        font-size: size-pc(11, rem)
+        border: none
+        border-bottom: 0.05em solid $color-white
+        margin: size-pc(25, rem) 0 size-pc(25, rem) 0
+      .title
+        font-size: size-pc(20, rem)
+        font-weight: 600
+        text-align: center
+        margin-bottom: size-pc(35, rem)
+  &-info
+    width: 100%
+    background: $color-gray1
+    color: $color-white
+    padding: 1.5em 2.3em 1.5em 3em
+    display: flex
+    align-items: center
+    @include sp
+      flex-direction: column
+      text-align: center
+      padding: size-sp(21, rem) size-sp(18, rem)
+    a
+      color: inherit
+    >.group-text
+      width: 100%
+      padding: 0 1em 0 0
+      @include sp
+        padding: 0
+      p
+        @include sp
+          margin: 0
+    >.group-button
+      display: flex
+      align-items: center
+      @include sp
+        margin-top: size-sp(20, rem)
+        *:first-child
+          order: 2
+        *:last-child
+          order: 1
+          margin: 0 1.25rem 0 0
+    &-bottom-fixed
+      position: fixed
+      top: auto
+      left: 0
+      bottom: 0
+      width: 100%
+      z-index: 999
+      transform: translate(0, 100%)
+      &-show
+        transition: all ease 0.2s
+        transform: translate(0, 0)
+  &-network
+    position: relative
+    // max-width: 25em
+    width: 100%
+    @include sp
+      max-width: size-sp(222, rem)
+    &.l-network--1
+      background: rgba(#454545, 0.4)
+      border-radius: 5em 0 0 0
+      @include sp
+        border-radius: size-sp(30, rem) 0 0 0
+    &.l-network--2
+      background: rgba(#2C2C2C, 0.4)
+    &.l-network--3
+      background: rgba(#000000, 0.4)
+      border-radius: 0 0 4.8em 0
+      @include sp
+        border-radius: 0 0 size-sp(30, rem) 0
+    &::before
+      content: ''
+      display: block
+      width: 100%
+      padding: 0 0 80% 0
+    .content
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      .number
+        font-family: $font-family-TitilliumWeb
+        font-size: size-pc(190, rem)
+        font-weight: 200
+        line-height: 1
+        text-align: center
+        opacity: 0.8
+        color: $color-red
+        @media screen and ( max-width: 1440px )
+          font-size: size-pc(160, rem)
+        @include sp
+          font-size: size-sp(97, rem)
+      .text
+        font-family: $font-family-TitilliumWeb
+        font-size: size-pc(40, rem)
+        font-weight: 300
+        text-align: center
+        @media screen and ( max-width: 1440px )
+          font-size: size-pc(30, rem)
+        @include sp
+          font-size: size-sp(25, rem)
+  &-icon-scroll-down
+  
+  &-value
+    background: $color-gray07
+    position: relative
+    border: none
+    border-radius: 4em 0 4em 0
+    max-width: size-pc(460, rem)
+    width: 100%
+    transition: all .3s ease
+    margin: size-pc(100, rem) auto
+    margin-bottom: 0
+    .img 
+      width: size-pc(170, rem)
+      height: size-pc(170, rem)
+      border-radius: 50%
+      background: $color-black-value
+      position: absolute
+      left: 50%
+      transform: translate(-50%, -50%)
+      display: flex
+      justify-content: center
+      align-items: center
+      @include sp
+        width: size-sp(95, rem)
+        height: size-sp(95, rem)    
+        img
+          display: none
+        img.gif
+          display: inline-block
+      @include pc
+        img
+        img.gif
+          display: none
+        &:hover
+          img
+            display: none
+          img.gif
+            display: inline-block
+    .content
+      text-align: center
+      padding: 2rem
+      padding-top: size-pc(98, rem)
+      @include sp
+        padding: 0 size-sp(27, rem) size-sp(23, rem)
+        margin-top: size-sp(50, rem)
+      .title
+        font-weight: 600
+        font-size: size-pc(35, rem)
+        margin-bottom: size-pc(20, rem)
+        @include sp
+          font-size: size-sp(20, rem)
+          margin-top: size-sp(55, rem)
+          display: inline-block
+          width: 100%
+      .descript
+        font-size: size-pc(15, rem)
+        line-height: 1.6
+        @include sp
+          font-size: size-sp(9, rem)
+  &-leader
+    // background: $color-gray07
+    position: relative
+    border: none
+    border-radius: 4em 0 4em 0
+    max-width: size-pc(460, rem)
+    width: 100%
+    transition: all .3s ease
+    overflow: hidden
+    cursor: pointer
+    background: #454545
+    opacity: 0.5
+    @include sp
+      border-radius: size-sp(30, rem) 0 size-sp(30, rem) 0
+    &::before
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      content: ''
+      background-image: url(../img/about/bg-leader.png)
+      background-repeat: no-repeat
+      background-size: contain
+      background-position: center
+      
+    &::after
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      content: ''
+      // background: #454545
+    .img 
+      position: relative 
+      padding-bottom: 100%
+      overflow: hidden
+      
+      img
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        object-fit: contain
+        object-position: top
+        padding: 0 20px
+        padding-bottom: 50px
+    .content
+      position: absolute
+      padding: 0.5em 4em 1.5em 60px
+      padding-left: 50px
+      bottom: 0
+      left: 0
+      right: 0
+      background: #E92B2A
+      text-align: left
+      @include sp
+        padding: size-sp(4, rem) size-sp(25, rem) size-sp(18, rem) size-sp(35, rem)
+      &::before
+        position: absolute
+        width: size-pc(28, rem)
+        height: size-pc(35, rem)
+        top: size-pc(18, rem)
+        left: size-pc(18, rem)
+        content: ''
+        background-image: url(../img/lion-logo-black-small.png)
+        background-repeat: no-repeat
+        background-size: contain
+        @include sp
+          top: size-sp(9, rem)
+          left: size-sp(10, rem)
+          width: size-sp(18, rem)
+          height: size-sp(22, rem)
+      .name
+        font-size: size-pc(30, rem)
+        margin: 0
+        font-weight: 600
+        @include sp
+          font-size: size-sp(20, rem)
+      .position-title
+        margin: 0
+        font-size: size-pc(18, rem)
+        font-weight: 700
+        color: $color-black
+        @include sp
+          font-size: size-sp(12, rem)
+    .descript
+      background: $color-gray1
+      padding: 3.75em 1.8em 1.6em 1.8em
+      position: absolute
+      margin: 0!important
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      z-index: 3
+      color: $color-white
+      display: flex
+      flex-direction: column
+      font-size: size-pc(15, rem)
+      opacity: 0
+      visibility: hidden
+      transition: all .3s ease
+      @include sp
+        font-size: size-sp(9, rem)
+        padding: size-sp(20, rem)
+      .text
+        flex: 0 0 70%
+        position: relative
+        margin-bottom: size-pc(40, rem)
+        overflow: auto
+        @include sp
+          margin-bottom: size-sp(20, rem)
+          flex: 0 0 80%
+      .profile
+        display: inline-flex
+        align-items: center
+        flex: 0 0 30%
+        text-align: center
+        color: $color-white
+        transition: all .3s ease
+        position: relative
+        width: fit-content
+        margin: auto
+        padding-top: 0
+        @include sp
+          flex: 0 0 20%
+          padding-top: 0
+        &::before
+          top: 0
+          left: 50%
+          transform: translateX(-50%)
+          position: absolute
+          width: size-pc(68, rem)
+          height: 2px 
+          background: $color-red
+          content: ''
+        &:hover
+          color: $color-red
+        img
+          width: size-pc(30, rem)
+          margin-right: 5px
+          @include sp
+            width: size-sp(20, rem)
+    &:hover
+      opacity: 1
+      .descript
+        opacity: 1
+        visibility: visible
+  &-offices
+    text-align: center
+    max-width: size-pc(400, rem)
+    margin-left: auto
+    margin-right: auto
+    .title
+      font-size: size-pc(60, rem)
+      font-weight: 300
+      color: $color-gray
+      margin-bottom: size-pc(40, rem)
+      @include sp
+        font-size: size-sp(40, rem)
+        line-height: calc(50 / 40)
+        margin-bottom: 1rem
+    .content
+      font-family: $font-family-TitilliumWeb
+      .item 
+        margin-bottom: size-pc(30, rem)
+        h5
+          margin: 0
+          font-size: size-pc(20, rem)
+          color: $color-red
+          font-weight: 700
+          @include sp
+            font-size: size-sp(12, rem)
+        p
+          margin: 0
+          font-weight: 100
+          font-size: size-pc(20, rem)
+          @include sp
+            font-size: size-sp(12, rem)
+            font-weight: 200
+          a
+            text-decoration: unset
+        a
+          color: $color-white
+          font-weight: 100
+          font-size: size-pc(20, rem)
+          transition: all .3s ease
+          @include sp
+            font-size: size-sp(12, rem)
+          &:hover 
+            color: $color-gray
+.btn-group-2
+  > *
+    &:first-child
+      margin-right: size-pc(100, rem)
+      @include sp
+        margin-right: size-sp(22, rem)

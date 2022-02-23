@@ -1,0 +1,29 @@
+.base-loading
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  z-index: 9999
+  overflow: hidden
+  background: $color-black04
+  &-logo
+    width: 100%
+    height: 100%
+    // background: $color-black08
+    // background-size: 12.5em auto
+    display: flex
+    align-items: center
+    justify-content: center
+    @include sp
+      background-size: size-sp(120, rem)
+    svg
+      position: relative
+      top: -8.5%
+      width: 12.5em
+      @include sp
+        width: size-sp(120, rem)
+      path 
+        fill-opacity: 0
+        // stroke-width: 10px
+        // stroke: $color-red   

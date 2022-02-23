@@ -1,0 +1,217 @@
+.l
+  &-form
+    background: rgba(#454545, 0.8)
+    border-radius: size-pc(80, rem) 0 size-pc(80, rem) 0
+    @include sp
+      border-radius: size-sp(30, rem) 0 size-sp(30, rem) 0
+    &-input
+      margin: 1em 0 0 0
+      @include sp
+        margin: 0.4em 0 0 0
+      input
+        background: transparent
+        color: $color-white
+        border: none
+        border-bottom: 0.1em solid $color-white
+        font-size: size-pc(25, rem)
+        outline: none
+        padding: 0.535em 0
+        width: 100%
+        line-height: 1
+        border-radius: 0
+        @include placeholder
+          color: $color-white
+        @include sp
+          border-bottom-width: size-sp(1, rem)
+          font-size: size-sp(12, rem)
+      &.input-textarea
+        margin-top: 0
+      textarea
+        border-radius: 0
+        width: 100%
+        font-size: size-pc(25, rem)
+        outline: none
+        padding: size-pc(20, rem)
+        min-height: size-pc(383, rem)
+        background: #808080
+        width: 100%
+        line-height: 1
+        color: $color-white
+        @include placeholder
+          color: $color-white
+        @include sp
+          min-height: size-sp(50, rem)
+          max-height: size-sp(100, rem)
+          border-width: size-sp(1, rem)
+          font-size: size-sp(12, rem)
+    &-note
+      font-size: size-pc(15, rem)
+      margin: 1.5em 0 0 0
+      @include sp
+        margin: 0em 0 0 0
+        font-size: size-sp(7, rem)
+    &-addmore
+      font-size: size-pc(15, rem)
+      margin: 1.5em 0 0 0
+      cursor: pointer
+      @include sp
+        font-size: size-sp(9, rem)
+    &-label
+      font-size: size-pc(25, rem)
+      padding: 0.535em 0;
+      margin: 0.8em 0 0 0
+      @include sp
+        font-size: size-sp(12, rem)
+        margin: 0.4em 0 0 0
+    &-newsletter
+      max-width: 25em
+      margin: 0 auto 0 auto
+      position: relative
+      button[type="submit"]
+        position: absolute
+        top: auto
+        left: auto
+        right: 0
+        bottom: 0.5em
+    &-submitbrief
+      display: flex
+      flex-wrap: wrap
+      > div
+        &:first-child
+          width: 50%
+          padding: 1em size-pc(50, rem) 1.8em size-pc(60, rem)
+          @include sp
+            width: 100%
+            padding: size-sp(15, rem) size-sp(15, rem) 0
+        &:last-child
+          width: 50%
+          padding: 1em size-pc(60, rem) 1.8em size-pc(50, rem)
+          @include sp
+            width: 100%
+            padding: 0 size-sp(15, rem) size-sp(15, rem)
+    .input-style
+      font-size: size-pc(15, rem)
+      text-align: center
+      text-transform: uppercase
+      cursor: pointer
+      border: size-pc(2, rem) solid $color-red
+      border-radius: size-pc(10, rem) 0 size-pc(10, rem) 0
+      font-family: $font-button
+      line-height: size-pc(12, rem)
+      font-weight: bold
+      background: transparent
+      color: $color-white
+      padding: size-pc(8, rem)
+      min-width: size-pc(92, rem)
+      cursor: pointer
+      transition: all .3s ease
+      @include sp
+        font-size: size-sp(9, rem)
+        padding: size-sp(3, rem)
+        min-width: size-sp(65, rem)
+      &:hover
+        background: $color-gray
+        border-color: $color-gray
+    &-tag
+      display: flex
+      flex-wrap: wrap
+      .input-group-tag
+        display: flex
+        margin-bottom: size-pc(20, rem)
+        @include sp
+          margin-bottom: size-sp(10, rem)
+        input[type="checkbox"]
+          display: none
+          &:checked
+            & + label
+              background: $color-red
+              &:hover 
+                border-color: $color-red
+        & + .input-group-tag
+          margin-left: size-pc(20, rem)
+          @include sp
+            margin-left: size-sp(10, rem)
+        &.tag-other
+          padding-bottom: size-pc(10, rem)
+          margin-left: 0px
+          flex: 0 0 100%
+          width: 100%
+          border-bottom: size-pc(2, rem) solid $color-white
+          @include sp
+            border-bottom-width: size-sp(1, rem)
+          @include sp
+            margin-bottom: 0
+          input[type="text"]
+            padding-left: size-pc(20, rem)
+            background: transparent
+            border: unset
+            color: $color-white
+            &:active,&:focus
+              outline: unset
+    &-upload
+      display: flex
+      align-items: center
+      input[type="file"]
+        display: none
+      label 
+        margin-right: size-pc(23, rem)
+        &.has-file
+          background: $color-red
+      span
+        font-size: size-pc(15, rem)
+        @include sp
+          font-size: size-sp(9, rem)
+    &-select
+      &+.l-form-select
+        @include sp
+          margin-top: size-sp(10, rem)
+      .n-select
+        min-width: size-pc(200, rem)
+        color: $color-white
+        background: transparent
+        border: unset
+        border-radius: 0!important
+        border-bottom: size-pc(2, rem) solid $color-gray
+        padding-left: 0
+        font-weight: bold
+        
+        @include sp
+          font-size: size-sp(12, rem)
+          border-bottom: size-sp(1, rem) solid $color-gray
+          height: size-sp(30, rem)
+          line-height: size-sp(30, rem)
+        &::after
+          border-color: $color-red
+          right: size-pc(4, rem)
+          @include sp
+            right: size-sp(2, rem)
+        .list
+          width: 100%
+          color: $color-white
+          background: transparent
+          border-radius: 0
+          transform: scale(1)
+          opacity: 1
+          &:hover 
+            .option:not(:hover)
+              background: $color-gray1!important
+        .option:hover,
+        .option.focus,
+        .option.selected.focus
+          background-color: $color-gray
+        .option
+          transform: translateY(-10px)
+          opacity: 0
+          transition: transform .3s ease ,opacity .6s ease
+          background: $color-gray1
+          @for $i from 1 through 20
+            &:nth-child(n + #{$i})
+              transition-delay: 0.5 - ($i * .1s)
+        &.open
+          
+          .option
+            transform: translateY(0px)
+            opacity: 1
+            @for $i from 1 through 20
+                &:nth-child(n + #{$i})
+                    transition-delay: $i * .1s

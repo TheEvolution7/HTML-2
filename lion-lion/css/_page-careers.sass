@@ -1,0 +1,132 @@
+.l-career-page
+    max-height: 100%
+    overflow: hidden
+    @include sp
+        padding: size-sp(60, rem) 0 0 0
+.l-page-career
+    &-container
+        min-height: 70vh
+        max-height: 70vh
+        display: flex
+        flex-direction: column
+        justify-content: center
+        padding-bottom: 3em
+        @include sp
+            padding-bottom: 0em
+        .l-bg-list-career 
+            margin: 3em 0 0.5em 0
+            border-radius: size-pc(80, rem) 0 size-pc(80, rem) 0
+            background: $color-gray08
+            min-height: size-pc(530, rem)
+            max-height: 60vh
+            @include sp
+                margin: 1.5em 0 0.5em 0
+                min-height: unset
+                max-height: 46vh
+                border-radius: size-sp(30, rem) 0 size-sp(30, rem) 0
+      
+            .l-box-list
+                padding: size-sp(40, rem) 2em 2em 2em
+                @include sp
+                    padding: size-sp(20, rem)
+            .l-list-career
+                max-height: size-pc(435, rem)
+                display: flex
+                flex-wrap: wrap
+                overflow: auto
+                @include sp
+                    // max-height: size-sp(500, rem)
+                    max-height: 40vh
+                .l-career-item 
+                    padding-left: 1.5em
+                    padding-right: 1.5em
+                    flex: 0 0 33.333333%
+                    text-align: center
+                    margin-bottom: 2em
+                    @for $i from 1 through 10
+                        &:nth-child(n + #{$i})
+                            animation-delay: $i * .2s + 1
+                    @include sp
+                        flex: 0 0 50% 
+                        padding-left: size-sp(5, rem)
+                        padding-right: size-sp(5, rem)
+                    .title
+                        font-family: $font-title
+                        font-size: size-pc(25, rem)
+                        font-weight: bold
+                        @include sp
+                            font-size: size-sp(15, rem)
+                    .text
+                        font-size: size-pc(20, rem)
+                        font-weight: 300
+                        @include sp
+                            font-size: size-sp(10, rem)
+                    .l-btn-view
+                        margin: auto
+                        margin-top: size-pc(20, rem)
+                        @include sp
+                            margin-top: size-sp(10, rem)
+            .l-box-detail
+                padding: size-pc(40, rem)
+                display: none
+                @include sp
+                    padding: size-sp(20, rem)
+            .l-career-detail
+                @extend .l-list-career
+                margin: 0
+                
+                display: block
+                .l-detail-item
+                    display: none
+                    overflow: auto
+                    width: 100%
+                    padding-right: size-pc(55, rem)
+                    @include sp
+                        padding-right: 0
+                    .title 
+                        padding-bottom: size-pc(40, rem)
+                        @include sp
+                            padding-bottom: size-sp(20, rem)
+                        h2 
+                            text-align: center
+                            font-size: size-pc(35, rem)
+                            margin: 0
+                            @include sp
+                                font-size: size-sp(15, rem)
+                        h3
+                            margin: 0
+                            font-weight: 400
+                            text-align: center
+                            font-size: size-pc(20, rem)
+                            @include sp
+                                font-size: size-sp(10, rem)
+            .l-box-resume 
+                display: none
+            .l-form-resume
+                background: unset
+                display: flex
+                flex-wrap: wrap
+                > div
+                    &:first-child
+                        width: 50%
+                        padding: 2em size-pc(50, rem) 2em size-pc(60, rem)
+                        @include sp
+                            width: 100%
+                            padding: size-sp(10, rem) size-sp(20, rem) 0
+                    &:last-child
+                    width: 50%
+                    padding: 2em size-pc(60, rem) 2em size-pc(50, rem)
+                    @include sp
+                        width: 100%
+                        padding: 0 size-sp(20, rem) size-sp(30, rem)
+        .group-button 
+            margin: 0 -2.5em
+            margin-top: 2em
+            > *
+                margin: 0 size-pc(50, rem)
+                @include sp
+                    margin: 0 size-sp(10, rem)
+            #btn-back-list 
+                display: none
+            #btn-submit-form-resume
+                display: none

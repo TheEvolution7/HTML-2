@@ -1,0 +1,18 @@
+@mixin full()
+  @media (min-width: $design_pc_size+'px')
+    @content
+@mixin pc()
+  @media (min-width: 1024px) and (max-width: $design_pc_size+'px')
+    @content
+@mixin sp()
+  @media (max-width: 1023px)
+    @content
+@mixin placeholder()
+  &::-webkit-input-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content
+  &:-moz-placeholder
+    @content

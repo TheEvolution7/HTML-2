@@ -1,0 +1,16 @@
+.l-container
+  max-width: size-pc(1500, rem)
+  margin-left: auto
+  margin-right: auto
+
+  @include sp
+    margin-left: size-sp(10, rem)
+    margin-right: size-sp(10, rem)
+  &--medium
+    max-width: size-pc(1400, rem)
+  &--small
+    max-width: size-pc(1100, rem)
+    @media screen and ( max-width: 1024px )
+      max-width: size-pc(920, rem)
+    
+    

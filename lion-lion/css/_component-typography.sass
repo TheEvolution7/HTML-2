@@ -1,0 +1,53 @@
+.l
+  &-h1
+    font-family: $font-title
+    font-size: size-pc(55, rem)
+    line-height: calc(90 / 55)
+    font-weight: 600
+    margin: 0
+    @include sp
+      font-size: size-sp(25, rem)
+  &-h2
+    font-size: size-pc(35, rem)
+    font-weight: bold
+    line-height: calc(45 / 35)
+    margin: auto
+    margin-top: 0
+    max-width: size-pc(971, rem)
+    @include sp
+      font-size: size-sp(20, rem)
+  &-titillium
+    font-family: $font-family-TitilliumWeb
+  &-desc
+    max-width: size-pc(842, rem)
+    font-size: size-pc(25, rem)
+    line-height: calc(35 / 25)
+    margin: 0 auto
+    @include sp
+      font-size: size-sp(12, rem)
+  &-section-title
+    font-family: $font-title
+    font-size: size-pc(25, rem)
+    line-height: calc(35 / 25)
+    color: $color-gray
+    border-bottom: 0.08em solid $color-red
+    display: inline-flex
+    @include sp
+      font-size: size-sp(12, rem)
+  &-text-small
+    font-size: size-pc(15, rem)
+    @include sp
+      font-size: size-sp(8, rem)
+  &-text-primary
+    color: $color-red
+  &-text-uppercase
+    text-transform: uppercase
+  &-title-icon
+    width: size-pc(90, rem)
+    height: size-pc(90, rem)
+    margin-right: 15px
+    margin-bottom: 15px
+    object-fit: contain
+    @include sp
+      width: size-sp(63, rem)
+      height: size-sp(63, rem)

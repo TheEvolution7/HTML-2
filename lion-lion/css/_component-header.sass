@@ -1,0 +1,41 @@
+.l-header
+  &-container
+  .l-hamburger
+    position: fixed
+    top: 4.53125vw
+    left: 7vw
+    z-index: 999
+    @include sp
+      top: size-sp(25, rem)
+      left: size-sp(20, rem)
+  .l-right-menu
+    position: fixed
+    top: 4.53125vw
+    right: 7vw
+    z-index: 999
+    transition: all ease 0.2s
+    @include sp
+      display: none
+    &-hidden
+      opacity: 0
+      visibility: hidden
+    a
+      font-family: $font-menu
+      color: $color-white
+      font-size: size-pc(25, rem)
+      font-weight: bold
+      text-decoration: none
+      transition: color .3s ease
+      &:hover 
+        color: $color-red
+.l-logo
+  top: size-pc(66.2, vw)
+  width: auto
+  height: 4.081em
+  @include sp
+    height: size-sp(40, rem)
+  &-header
+    transform: translate(-50%, 0%)
+    left: 50%
+    position: fixed
+    z-index: 999

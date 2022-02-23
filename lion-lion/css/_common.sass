@@ -1,0 +1,108 @@
+.scrollbar
+    &::-webkit-scrollbar 
+        width: size-sp(15, rem)
+        @include sp
+            width: size-sp(4, rem)
+    &::-webkit-scrollbar-track
+        background: #2C2C2C
+    &::-webkit-scrollbar-thumb 
+        background: #656565  
+    &::-webkit-scrollbar-thumb:hover 
+        background: #494949
+textarea 
+  resize: none
+  box-sizing: margin-box
+  &.scrollbar
+    scroll-snap-type: both mandatory
+    scroll-padding: 10px 0 10px 0
+
+.bg-dark
+    &::after
+        content: ''
+        position: fixed
+        z-index: -1
+        width: 100vw
+        height: 100vh
+        top: 0
+        left: 0
+        background-color: #000
+        opacity: 0.6
+
+.disable-scroll
+    overflow: hidden
+
+.slick-slider
+    .slick-arrow
+        width: size-pc(55, rem)
+        height: size-pc(55, rem)
+        position: absolute
+        top: 50%
+        background-position: center
+        background-size: contain
+        background-repeat: no-repeat
+        background-color: transparent
+        border: none
+        color: transparent
+        cursor: pointer
+        z-index: 1
+        @include sp
+            width: size-sp(30, rem)
+            height: size-sp(30, rem)
+        &[data-trans]
+            opacity: 1
+        &.slick-prev 
+            left: 0
+            background-image: url(../img/about/prev.png)
+            transform: translate(0%, -50%)
+            @include sp
+                transform: translate(0%, -50%)
+        &.slick-next 
+            right: 0
+            background-image: url(../img/about/next.png)
+            transform: translate(0%, -50%)
+            @include sp
+                transform: translate(0%, -50%)
+        &.slick-disabled
+            visibility: hidden
+    .slick-dots
+        position: absolute
+        bottom: -50px
+        left: 0
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        list-style: none
+        margin: 0
+        padding: 0
+        li
+            display: inline-block
+            button
+                border-radius: 50%
+                overflow: hidden
+                background: #fff
+                opacity: 0.5
+                padding: 0
+                color: transparent
+                border: none
+                transform: translate(0, -50%)
+                @include pc
+                    width: size-sp(5, rem)
+                    height: size-sp(5, rem)
+                @include sp
+                    width: size-sp(5, rem)
+                    height: size-sp(5, rem)
+                    margin: 0 size-sp(2.5, rem)
+            &.slick-active
+                button
+                    @include sp
+                    width: size-sp(8, rem)
+                    height: size-sp(8, rem)
+                    opacity: 1
+
+.only-pc
+    @include sp
+        display: none
+.only-sp
+    @include pc
+        display: none

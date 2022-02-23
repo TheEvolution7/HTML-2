@@ -1,0 +1,78 @@
+.l-page-about-us
+    .descript
+        margin: auto
+        margin-top: size-pc(40, rem)
+        margin-bottom: size-pc(48, rem)
+        max-width: size-pc(829, rem)
+        p
+            margin-bottom: size-pc(20, rem)
+    .value-container
+        margin-bottom: size-pc(80, rem)
+        @include sp
+            margin-bottom: size-sp(60, rem)
+    .l-value-list
+        margin-bottom: 0
+        .l-value
+            @include sp
+                max-width: size-sp(258, rem)
+                margin: 0 auto
+    .l-leader-list
+        margin: 0 0 size-pc(80, rem)
+        margin-left: size-pc(-73, rem)
+        margin-right: size-pc(-73, rem)
+        @include pc
+            .slick-active
+                .l-leader
+                    transform: scale(0.9)
+                    transform-origin: center left
+                    margin: 0 auto
+                
+            .slick-current.slick-active
+                .l-leader
+                    transform: scale(0.9)
+                    transform-origin: center right
+                &+.slick-active
+                    .l-leader
+                        transform: scale(1)
+        @include sp
+            margin: size-sp(20, rem) 0 size-sp(40, rem) 0
+        .l-leader
+            @include sp
+                max-width: size-sp(258, rem)
+                margin: 0 auto
+
+    .l-partner-list 
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        margin-left: size-pc(-45, rem)
+        margin-right: size-pc(-45, rem)
+        margin-top: size-pc(40, rem)
+        margin-bottom: size-pc(18, rem)
+        @include sp
+            margin-left: 0
+            margin-right: 0
+            margin-top: size-sp(20, rem)
+        .l-partner-item 
+            flex: 0 0 16.666666%
+            width: 100%
+            padding-left: size-pc(45, rem)
+            padding-right: size-pc(45, rem)
+            margin-bottom: size-pc(52, rem)
+            @include sp
+                flex: 0 0 20%
+                padding-left: size-sp(10, rem)
+                padding-right: size-sp(10, rem)
+                margin-bottom: size-sp(20, rem)
+            img 
+                cursor: pointer
+                filter: grayscale(1) 
+                transition: all .3s ease 
+                &:hover
+                    filter: grayscale(0)   
+    .l-offices-list
+        margin: 0 0 size-pc(100, rem)
+        .l-offices
+            @include sp
+                max-width: size-sp(258, rem)
+                margin: 0 auto

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Onego</title>
+    <!-- favicon -->
+    <link rel=icon href="assets/favico.png" sizes="20x20" type="image/png">
+    <!-- All CSS plugins Here  -->
+    <link rel="stylesheet" href="assets/css-plugins.css">
+    <!-- All Icon Fonts Here  -->
+    <link rel="stylesheet" href="assets/all-icon-font.css">
+    
+    <!-- Main Stylesheet -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- responsive Stylesheet -->
+    <link rel="stylesheet" href="assets/responsive.css">
+
+    <link rel="stylesheet" href="assets/custom.min.css">
+     
+     
+
+</head>
+<body>
+    
+    <!-- preloader area start -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader area end -->
+    
+    <!-- search Popup -->
+    <div class="body-overlay" id="body-overlay"></div>
+    <div class="search-popup" id="search-popup">
+        <form action="index.html" class="search-form">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search.....">
+            </div>
+            <button type="submit" class="submit-btn"><i class="ti-search"></i></button>
+        </form>
+    </div>
+    <!-- //. search Popup -->
+
+    <!-- Info-popup -->
+    <div class="popup-item info-popup">
+        <div class="popup-item-inner">
+            <button class="popup-close-btn info-popup-content_close">X</button>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="popup-inner-img">
+                        <div class="popup-inner-img-inner">
+                            <ul>
+                                <li><img src="assets/14.jpeg" alt="Flower Image"></li>
+                                <li><img src="assets/15.jpeg" alt="Flower Image"></li>
+                                <li><img src="assets/16.jpeg" alt="Flower Image"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="popup-inner-content text-center">
+                        <div class="section-title-area text-center">
+                            <div class="section-title section-title-2" data-aos="fade-up" data-aos-duration="1500">
+                                <div class="icon">
+                                    <img src="assets/title.svg" alt="Bloom">
+                                </div>
+                                <div class="title-text">
+                                    <h2 class="title">Contact us</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <address>+12345678912 <br> 3, Avenue Saint Andrews, California <br> info@onego.com</address>
+                        <div class="social_share">
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Message-popup -->
+    <div class="popup-item message-popup">
+        <div class="popup-item-inner">
+            <button class="popup-close-btn message-popup-content_close">X</button>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="message-popup-img">
+                        <img src="assets/7.jpeg" alt="">
+                    </div>
+                    <div class="popup-inner-content">
+                        <div class="section-title-area ">
+                            <div class="section-title section-title-2" data-aos="fade-up" data-aos-duration="1500">
+                                <div class="icon">
+                                    <img src="assets/title.svg" alt="Bloom">
+                                </div>
+                                <div class="title-text">
+                                    <h2 class="title">Send a message</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="#" class="message-popup-form">
+                            <label>Full name*</label>
+                            <input type="text" name="name">
+                            <label>Email address*</label>
+                            <input type="email" name="email">
+                            <label>Insert message</label>
+                            <textarea name="message"></textarea>
+                            <div class="btn-wrapper">
+                                <button class="boxed-btn btn-rounded" type="submit">Send message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Location-popup -->
+    <div class="popup-item location-popup ">
+        <div class="popup-item-inner scrollbar-primary">
+            <button class="popup-close-btn location-popup-content_close">X</button>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="popup-inner-img">
+                        <div class="popup-inner-img-inner">
+                            <ul>
+                                <li><img src="assets/4.jpeg" alt="Flower Image"></li>
+                                <li><img src="assets/5.jpeg" alt="Flower Image"></li>
+                                <li><img src="assets/6.jpeg" alt="Flower Image"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="popup-inner-content text-center">
+                        <div class="section-title-area text-center">
+                            <div class="section-title section-title-2" data-aos="fade-up" data-aos-duration="1500">
+                                <div class="icon">
+                                    <img src="assets/title.svg" alt="Bloom">
+                                </div>
+                                <div class="title-text">
+                                    <h2 class="title">Working hours</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Monday - Friday: 9AM - 4PM <br> Saturday: 9Am - 3PM <br> Sunday: Closed </p>
+                        <div class="social_share">
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar area start -->
+    <div class="nav-style-01-wrap">
+        <nav class="navbar navbar-area navbar-expand-lg nav-style-01 nav-style-04 subpage_header">
+            <div class="container-fluid nav-container">
+                <div class="responsive-mobile-menu">
+                    <div class="logo-wrapper mobile-logo">
+                        <a href="index.html" class="logo">
+                            <img src="assets/logo-1.png" alt="logo">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bloom_main_menu" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </span>
+                    </button>
+                </div>
+                <div class="logo-wrapper desktop-logo">
+                    <a href="index.html" class="logo">
+                        <img src="assets/logo-1.png" alt="logo">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bloom_main_menu">
+                    <ul class="navbar-nav">
+                        <li class="">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li><a href="about.html">About us</a></li>
+                        <li class="menu-item-has-children">
+                            <a href="shop.html">Shop</a>
+                            <ul class="sub-menu">
+                                <li><a href="shop.html">Button Rose Garlands</a></li>
+                                <li><a href="shop.html">Carnation Garlands</a></li>
+                                <li><a href="shop.html">Green Leafs</a></li>
+                                <li><a href="shop.html">Indian Wedding Garlands</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Services</a>
+                            <ul class="sub-menu">
+                                <li><a href="service-detail.html">Events</a></li>
+                                <li><a href="service-detail.html">Decors</a></li>
+                                <li><a href="service-detail.html">Catering</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="who-sale.html">Wholesale</a></li>
+                        
+                        
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right-content">
+                    <ul>
+                        <li class="mini-cart-icon">
+                            <span class="mini-cart-icon header-navbar-active">
+                                <a href="#"><i class="ti-shopping-cart"></i></a>
+                                <sup>2</sup>
+                            </span>
+                        </li>
+                        <li class="search" id="search">
+                            <i class="ti-search"></i>
+                        </li>
+                        <li class="user-menu" >
+                            <a href="#"><img src="assets/user-img-2.png" alt="User"><span>Hey Riz</span></a>
+                            <ul>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Sign up</a></li>
+                                <li><a href="#">Sign in</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar area end -->
+
+    <!-- Mini cart start -->
+    <div class="mini-cart-wrapper">
+        <div class="sidebar-nav-icon">
+            <button class="mini-cart-close"><img src="assets/cart-icon.png" alt="Arrow Image"></button>
+        </div>
+        <div class="mini-cart-inner scrollbar-primary">
+            <ul>
+                <li>
+                    <div class="section-title-area ">
+                        <div class="section-title section-title-2" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="icon">
+                                <img src="assets/title.svg" alt="Bloom">
+                            </div>
+                            <div class="title-text">
+                                <h2 class="title">My orders</h2>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="cart-item">
+                        <div class="cart-item-inner">
+                            <div class="product-image">
+                                <a href="#"><img src="assets/1.jpeg" alt=""></a>
+                            </div>
+                            <div class="cart-item-brief">
+                                <div class="product-order-number">1</div>
+                                <div class="product-multiply">x</div>
+                                <div class="cart-product-title"><h2 class="product-title"><a href="#">Button Rose Garland</a></h2></div>
+                                <div class="product-price">$230</div>
+                                <div class="product-remove"><a href="#"><i class="fa fa-trash-o"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="cart-item">
+                        <div class="cart-item-inner">
+                            <div class="product-image">
+                                <a href="#"><img src="assets/2.jpeg" alt=""></a>
+                            </div>
+                            <div class="cart-item-brief">
+                                <div class="product-order-number">1</div>
+                                <div class="product-multiply">x</div>
+                                <div class="cart-product-title"><h2 class="product-title"><a href="#">Button Rose Garland</a></h2></div>
+                                <div class="product-price">$230</div>
+                                <div class="product-remove"><a href="#"><i class="fa fa-trash-o"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="cart-item">
+                        <div class="cart-item-inner">
+                            <div class="product-image">
+                                <a href="#"><img src="assets/3.jpeg" alt=""></a>
+                            </div>
+                            <div class="cart-item-brief">
+                                <div class="product-order-number">1</div>
+                                <div class="product-multiply">x</div>
+                                <div class="cart-product-title"><h2 class="product-title"><a href="#">Sunflower Roses</a></h2></div>
+                                <div class="product-price">$230</div>
+                                <div class="product-remove"><a href="#"><i class="fa fa-trash-o"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="cart-item">
+                        <div class="cart-item-inner cart-total">
+                            <h2>Total</h2>
+                            <h2><strong>$630</strong></h2>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="cart-item">
+                        <div class="cart-item-inner cart-total cart-btn">
+                            <div class="btn-wrapper">
+                                <a href="#" class="boxed-btn btn-rounded">View basket</a>
+                            </div>
+                            <div class="btn-wrapper">
+                                <a href="#" class="boxed-btn btn-rounded">Checkout</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul> 
+        </div>
+    </div>
+    <!-- Mini cart end -->
+
+    <!-- sidebar-sticky -->
+    <div class="floating-icon" id="service_info_item">
+        <div class="floating-icon__is floating-icon-info">
+            <i class="fa fa-phone"></i>
+        </div>
+        <!--floating-icon-is-->
+        <div class="floating-icon__is floating-icon-message">
+            <i class="fa fa-envelope"></i>
+        </div>
+        <!--floating-icon-is-->
+        <div class="floating-icon__is floating-icon-location">
+            <i class="fa fa-info-circle"></i>
+        </div>
+        <!--floating-icon-is-->
+    </div>
+
+
+    <!-- Breadcrumb area start -->
+    <div class="breadcrumb-area breadcrumb-style-1" style="background-image: url(assets/16.jpeg);">
+        <div class="container">
+            <div class="row custom-gutter">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-inner text-center">
+                        <h1 class="page-title">Frequently asked questions</h1>
+                        <!-- <ul class="page-list">
+                            <li><a href="#">Home</a></li>
+                            <li>Shop</li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb area end -->
+
+    
+
+    <!-- Why shop from us area start -->
+    <div class="why-shop-from-us-area accordion-style-one margin-bottom-120 mobile-mb-20 tab-mb-40">
+        <div class="container">
+            <div class="row custom-gutter">
+                <div class="col-lg-6">
+                    <div class="why-shop-from-us-inner">
+                        <div id="accordion_1">
+                            <!-- card -->
+                            <div class="card">
+                                <h6 data-toggle="collapse" data-target="#faq-item-1-1" aria-expanded="true"> 
+                                    I am a new user. How should I start?
+                                </h6>
+                                <div id="faq-item-1-1" class="collapse show" data-parent="#accordion_1">
+                                    <div class="card-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate sapien nec sagittis. Proin libero nunc consequat interdum. Condimentum lacinia quis vel eros donec ac. Mauris sit amet massa vitae tortor. Quisque id diam vel quam elementum pulvinar. Gravida in fermentum et sollicitudin ac orci phasellus. Facilisis gravida neque convallis a cras semper. Non arcu risus quis varius quam quisque id.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card">
+                                <h6 class="collapsed" data-toggle="collapse" data-target="#faq-item-1-2" aria-expanded="false">
+                                    Returns and refunds
+                                </h6>
+                                <div id="faq-item-1-2" class="collapse" data-parent="#accordion_1">
+                                    <div class="card-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate sapien nec sagittis. Proin libero nunc consequat interdum. Condimentum lacinia quis vel eros donec ac. Mauris sit amet massa vitae tortor. Quisque id diam vel quam elementum pulvinar. Gravida in fermentum et sollicitudin ac orci phasellus. Facilisis gravida neque convallis a cras semper. Non arcu risus quis varius quam quisque id.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card">
+                                <h6 class="collapsed" data-toggle="collapse" data-target="#faq-item-1-3" aria-expanded="false">
+                                    Are my details secured?
+                                </h6>
+                                <div id="faq-item-1-3" class="collapse" data-parent="#accordion_1">
+                                    <div class="card-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate sapien nec sagittis. Proin libero nunc consequat interdum. Condimentum lacinia quis vel eros donec ac. Mauris sit amet massa vitae tortor. Quisque id diam vel quam elementum pulvinar. Gravida in fermentum et sollicitudin ac orci phasellus. Facilisis gravida neque convallis a cras semper. Non arcu risus quis varius quam quisque id.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card">
+                                <h6 class="collapsed" data-toggle="collapse" data-target="#faq-item-1-4" aria-expanded="false">
+                                    Sale code is not working
+                                </h6>
+                                <div id="faq-item-1-4" class="collapse" data-parent="#accordion_1">
+                                    <div class="card-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate sapien nec sagittis. Proin libero nunc consequat interdum. Condimentum lacinia quis vel eros donec ac. Mauris sit amet massa vitae tortor. Quisque id diam vel quam elementum pulvinar. Gravida in fermentum et sollicitudin ac orci phasellus. Facilisis gravida neque convallis a cras semper. Non arcu risus quis varius quam quisque id.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card">
+                                <h6 class="collapsed" data-toggle="collapse" data-target="#faq-item-1-5" aria-expanded="false">
+                                    How do I make payment by my credit card
+                                </h6>
+                                <div id="faq-item-1-5" class="collapse" data-parent="#accordion_1">
+                                    <div class="card-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate sapien nec sagittis. Proin libero nunc consequat interdum. Condimentum lacinia quis vel eros donec ac. Mauris sit amet massa vitae tortor. Quisque id diam vel quam elementum pulvinar. Gravida in fermentum et sollicitudin ac orci phasellus. Facilisis gravida neque convallis a cras semper. Non arcu risus quis varius quam quisque id.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="why-shop-from-us-img text-center mobile-mb-50  mobile-mt-50 tab-mb-50">
+                        <img src="assets/17.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Why shop from us area end -->
+
+    <!-- footer area start -->
+    <footer class="footer-area">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row custom-gutter">
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="footer-widget widget">
+                            <div class="about_us_widget">
+                                <a href="index.html" class="footer-logo"> 
+                                    <img src="assets/logo-1.png" alt="footer logo">
+                                </a>
+                                <p>Flowers always make people better, happier, they are sunshine and medicine for the soul.</p>
+                                <address> <a href="tel:+0123456789">+12345678912</a> <br>3, Avenue Saint Andrews, California <br><a href="mailto:info@onego.com">info@onego.com</a></address>
+                                <div class="social_share">
+                                    <ul>
+                                        <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-6 col-md-6">
+                        <div class="footer-widget widget widget_text text-center mobile-text-left">
+                            <h4 class="widget-title">Working hours</h4>
+                            <p>Monday - Friday: 9AM - 4PM <br> Saturday: 9Am - 3PM <br> Sunday: Closed </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-3 col-6">
+                        <div class="footer-widget widget widget_nav_menu desktop-center">
+                            <h4 class="widget-title">Support</h4>
+                            <ul>
+                                <li><a href="faq.html">FAQs</a></li>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Payment facilities</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Refunds</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-3 col-6">
+                        <div class="footer-widget widget widget_nav_menu desktop-center">
+                            <h4 class="widget-title">Menu</h4>
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">Services</a>
+                            
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="footer-widget widget">
+                            <div class="newsletter-widget">
+                                <h4 class="widget-title">Contact us</h4>
+                                <p>Be among the first one to eceive and benefit from our inclusive sales every week.</p>
+                                <form action="#" class="form-input-box">
+                                    <input type="text" placeholder="Enter your email address">
+                                    <button type="submit"><img src="assets/arrow-right-white-2.svg" alt="Arrow Icon"></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row custom-gutter">
+                    <div class="col-lg-12">
+                        <div class="copyright-area-inner">
+                                &copy; Copyright <span class="current-year"></span> Onego. All rights reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <span class="back-top"><i class="fa fa-long-arrow-up"></i></span>
+    </div>
+    <!-- back to top area end -->
+    <!-- All jQuery Plugins Here -->
+    <script src="assets/jquery-plugins.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- main js -->
+    <script src="assets/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+    
+
+</body>
+</html>
