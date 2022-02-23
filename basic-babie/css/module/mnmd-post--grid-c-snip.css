@@ -1,0 +1,315 @@
+/* ----------------------------------------------------------------
+    Layout
+-----------------------------------------------------------------*/
+/*=====List large=====*/
+.margin-top-reverse-20{
+    margin-top: -20px; /*only using */
+}
+.mnmd-post--grid-c-snip .post--grid-c-lists-large{
+    padding-left: 70px;
+    padding-right: 60px;
+}
+.mnmd-post--grid-c-snip .post--grid-c-lists-large .list-item:not(:last-child){
+    margin-bottom: 60px;
+}
+
+/* ----------------------------------------------------------------
+    Content Layout
+-----------------------------------------------------------------*/
+/*=====List large=====*/
+.post.post-has-line-circle .post__thumb{
+    position: relative;
+}
+.post.post-has-line-circle .post__thumb:before{
+    content: '';
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid rgba(34,34,34,0.25);
+    position: absolute;
+    right: -70px;
+    top: -75px;
+}
+/*item*/
+.post--horizontal-3-col .post--wrap{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-right: 60px;
+}
+.post--horizontal-3-col .post--inner{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+/*thumb*/
+.post--horizontal-3-col .post__thumb{
+    margin-right: 80px;
+    margin-bottom: 0;
+}
+.post--horizontal-3-col.post--horizontal-reverse .post__thumb{
+    margin-left: 20px;
+    margin-right: 0;
+}
+/*text*/
+.post--horizontal-3-col .post__text{
+    max-width: 310px;
+}
+.post--horizontal-3-col .post__excerpt{
+    max-width: 80%;
+}
+/*button*/
+.post--grid-c-lists-large .post__readmore{
+    /*padding-left: 20px  ;*/
+}
+.post--grid-c-lists-large .button__readmore.button-see-more-circle span{
+    color: var(--color-text_0-6);
+    font-weight: 500;
+
+}
+/*=====post-has-line-circle=====*/
+.post.post-has-line-circle .post__thumb{
+    position: relative;
+}
+.post.post-has-line-circle .post__thumb:before{
+    content: '';
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid rgba(34,34,34,0.25);
+    position: absolute;
+    right: -70px;
+    top: -75px;
+    z-index: -1;
+}
+@media (max-width: 1199px) {
+    /* ----------------------------------------------------------------
+        Layout
+    -----------------------------------------------------------------*/
+    /*=====list large=====*/
+    .mnmd-post--grid-c-snip .post--grid-c-lists-large{
+        padding-left: 50px;
+        padding-right: 40px;
+    }
+    /* ----------------------------------------------------------------
+        Content Layout
+    -----------------------------------------------------------------*/
+    .post.post-has-line-circle .post__thumb:before{
+        width: 250px;
+        height: 250px;
+    }
+    /*=====list large=====*/
+    .post--horizontal-3-col .post__thumb{
+        width: 380px;
+        height: 240px;
+        margin-right: 40px;
+    }
+    .post--horizontal-3-col .post__title{
+        font-size: 18px;
+    }
+
+}
+@media (max-width: 991px){
+    /* ----------------------------------------------------------------
+        Layout
+    -----------------------------------------------------------------*/
+    /*=====list large=====*/
+    .mnmd-post--grid-c-snip .post--grid-c-lists-large{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* ----------------------------------------------------------------
+        Content Layout
+    -----------------------------------------------------------------*/
+    /*=====list large=====*/
+    .post--horizontal-3-col .post--wrap{
+        padding-right: 30px;
+    }
+    /*thumb*/
+    .post--horizontal-3-col .post__thumb{
+        width: 295px;
+        height: 200px;
+        margin-right: 25px;
+    }
+    .post--horizontal-3-col.post--horizontal-reverse .post__thumb{
+        margin-left: 25px;
+    }
+    /*text*/
+    .post--horizontal-3-col .post__excerpt{
+        max-width: 100%;
+    }
+    /*button*/
+    .post--horizontal-3-col .button__readmore.button-see-more-circle span{
+        font-size: 13px;
+    }
+    .post--horizontal-3-col .button__readmore.button-see-more-circle .readmore__text i{
+        width: 35px;
+        height: 35px;
+        font-size: 13px;
+    }
+}
+@media (max-width: 768px) {
+    /* ----------------------------------------------------------------
+        Layout
+    -----------------------------------------------------------------*/
+    /*=====list large=====*/
+    .mnmd-post--grid-c-snip .post--grid-c-lists-large .list-item:not(:last-child){
+        margin-bottom: 45px;
+    }
+    /* ----------------------------------------------------------------
+        Content Layout
+    -----------------------------------------------------------------*/
+    /*=====list large=====*/
+    .post--horizontal-3-col .post--wrap{
+        padding-right: 0;
+    }
+    /*thumb*/
+    .post--horizontal-3-col .post__thumb {
+        width: 265px;
+        height: 195px;
+        margin-right: 20px;
+    }
+    .post--horizontal-3-col.post--horizontal-reverse .post__thumb{
+        margin-bottom: 0;
+        margin-left: 20px;
+    }
+    /*text*/
+    .post--grid-c-lists-large .post__text{
+        max-width: calc( 100%  - 285px);
+    }
+    .post--grid-c-lists-large .post__title{
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    /*button*/
+    .post--grid-c-lists-large .post__readmore{
+        display: none;
+    }
+
+}
+@media (max-width: 576px){
+    /* ----------------------------------------------------------------
+        Layout
+    -----------------------------------------------------------------*/
+    .mnmd-post--grid-c-snip  .post--horizontal-3-col.post.post-has-line-circle .post__thumb:before{
+        display: none;
+    }
+    /*=====list large=====*/
+    .mnmd-post--grid-c-snip .post--grid-c-lists-large .list-item{
+        width: 100%;
+    }
+    .mnmd-post--grid-c-snip .post--grid-c-lists-large .list-item:not(:last-child){
+        margin-bottom: 35px;
+    }
+
+    /* ----------------------------------------------------------------
+       Content Layout
+   -----------------------------------------------------------------*/
+    /*=====list large=====*/
+    /*thumb*/
+    .post--horizontal-3-col .post__thumb,
+    .post--horizontal-3-col.post--horizontal-reverse .post__thumb{
+        width: 100%;
+        height: 300px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 15px;
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+    .mnmd-post--grid-c-snip .post--horizontal-3-col.post.post-has-line-circle .post__thumb:before{
+        display: none;
+    }
+    /*text*/
+    .post--horizontal-3-col .post__text,
+    .post--horizontal-middle.post--horizontal-reverse .post__text{
+        width: 100%;
+        max-width: 100%;
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+    .post--horizontal-3-col .post__title{
+        font-size: 18px;
+    }
+
+}
+@media (max-width: 480px){
+    /* ----------------------------------------------------------------
+        Layout
+    -----------------------------------------------------------------*/
+    /*=====list large=====*/
+    .mnmd-post--grid-c-snip .post--grid-c-lists-large .list-item:not(:last-child){
+        margin-bottom: 30px;
+    }
+    /* ----------------------------------------------------------------
+        Content Layout
+    -----------------------------------------------------------------*/
+    /*=====list large=====*/
+    .post--horizontal-3-col .post__thumb, .post--horizontal-3-col.post--horizontal-reverse .post__thumb{
+        height: 260px;
+    }
+    .post--horizontal-3-col .post__title{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 420px){
+    /* ----------------------------------------------------------------
+        Content Layout
+    -----------------------------------------------------------------*/
+    /*=====list large=====*/
+    .post--horizontal-3-col .post__thumb, .post--horizontal-3-col.post--horizontal-reverse .post__thumb{
+        height: 250px;
+    }
+}
+@media (max-width: 380px){
+    /* ----------------------------------------------------------------
+        Layout
+    -----------------------------------------------------------------*/
+    /*=====list large=====*/
+    .mnmd-post--grid-c-snip .post--grid-c-lists-large .list-item:not(:last-child){
+        margin-bottom: 25px;
+    }
+    /* ----------------------------------------------------------------
+        Content Layout
+    -----------------------------------------------------------------*/
+    /*=====list large=====*/
+    .post--horizontal-3-col .post__thumb, .post--horizontal-3-col.post--horizontal-reverse .post__thumb{
+        height: 230px;
+    }
+}
+@media (max-width: 320px){
+    /* ----------------------------------------------------------------
+        Content Layout
+    -----------------------------------------------------------------*/
+    /*=====list large=====*/
+    .post--horizontal-3-col .post__thumb, .post--horizontal-3-col.post--horizontal-reverse .post__thumb{
+        height: 200px;
+    }
+    .post--horizontal-3-col .post__title{
+        font-size: 16px;
+    }
+}
+/*Edit*/
+@media (max-width: 768px) {
+    .post--horizontal-text-z_index-center-y .post__text{
+        position: relative;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        top: unset;
+        left: unset;
+        width: 100%;
+    }
+}

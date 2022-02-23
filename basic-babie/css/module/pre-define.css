@@ -1,0 +1,94 @@
+/*===========================Margin======================*/
+/*----Module Spacing------*/
+.mnmd-block:not(:last-child){
+    margin-bottom: 100px;
+}
+.mnmd-block--margin-60:not(:first-child){
+    margin-top: -40px;
+}
+.mnmd-block--margin-60:not(:last-child) {
+    margin-bottom: 60px;
+}
+/*----Title------*/
+.block-heading{
+    margin-bottom: 50px;
+}
+.block-heading__title {
+    font-size: 40px;
+    margin-bottom: 0;
+    color: #222;
+    letter-spacing: normal;
+    text-transform: none;
+}
+.block-heading__title::first-letter {
+    color: #0661f1;
+    text-transform: uppercase;
+}
+.mnmd-block--margin-60 .block-heading{
+    margin-bottom: 40px;
+}
+.mnmd-block--margin-60 .block-heading__title {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #222;
+    opacity: 0.8;
+}
+.mnmd-block--margin-60 .block-heading__title::first-letter {
+    color: inherit;
+}
+
+
+
+@media (max-width: 768px) {
+    /* ----------------------------------------------------------------
+        Module block
+    -----------------------------------------------------------------*/
+    /*===Margin===*/
+    /*block*/
+    .mnmd-block:not(:last-child){
+        margin-bottom: 80px;
+    }
+    .mnmd-block--margin-60:not(:first-child){
+        margin-top: -30px;
+    }
+    /*===Size===*/
+    /*title*/
+    .block-heading__title {
+        font-size: 35px;
+    }
+}
+@media (min-width: 577px) and (max-width: 768px){
+    /* ----------------------------------------------------------------
+        Container custom
+    -----------------------------------------------------------------*/
+    .container-768{
+        width: 540px;
+        padding: 0 15px;
+        margin: auto;
+    }
+}
+@media (max-width: 576px){
+    /* ----------------------------------------------------------------
+        Container custom
+    -----------------------------------------------------------------*/
+    .container-768{
+        width: 100%;
+        padding: 0 15px;
+        margin: auto;
+    }
+
+    /* ----------------------------------------------------------------
+        Module block
+    -----------------------------------------------------------------*/
+    /*===Margin===*/
+    /*block*/
+
+    .block-heading{
+        margin-bottom: 40px;
+    }
+    /*title*/
+    .mnmd-block--margin-60 .block-heading{
+        margin-bottom: 30px;
+    }
+
+}

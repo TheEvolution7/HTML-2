@@ -1,0 +1,476 @@
+/* Slide bar -- frame*/
+.widget{
+    margin-bottom: 55px;
+}
+.widget__title{
+    margin-bottom: 35px;
+    color: var(--color-logo);
+}
+.widget__title-text{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: initial;
+    letter-spacing: 0;
+}
+/*--frame*/
+.mnmd-main-col{
+    width: 900px;
+}
+.mnmd-sub-col{
+    width: 300px;
+}
+
+/* ----------------------- Widget About */
+/*
+    Layout
+*/
+.widget-about .widget__content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+.widget-about .author__avatar{
+    width: 90px;
+    height: 90px;
+    position: relative;
+}
+.widget-about .author__avatar:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--color-text);
+    left: 20px;
+    top: -10px;
+    opacity: 0.2;
+    border-radius: 50%;
+    z-index: -1;
+}
+.widget-about .author__info{
+    flex: 1;
+    padding-right: 25px;
+}
+/*
+    Content
+*/
+.widget-about .entry-author__avatar{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.widget-about .author__name{
+    margin-bottom: 0;
+}
+.widget-about .author__task{
+    margin-bottom: 15px;
+}
+.widget-about .author__task a{
+    color: rgba(34,34,34,0.6);
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.widget-about .author__social .social-list > li:not(:last-child){
+    margin-right: 5px;
+}
+.widget-about .author__social .social-list > li > a{
+    color: var(--color-logo);
+    opacity: 0.8;
+    padding: 0;
+}
+/* Widget About ----------------------- */
+
+/* ----------------------- Widget Email*/
+/*
+    Content
+*/
+.widget-subscribe{
+    padding-top: 0;
+}
+.widget-subscribe .widget-subscribe__inner{
+    padding: 0;
+    box-shadow: none;
+    border: none;
+}
+.widget-subscribe .subscribe-form__fields{
+    max-width: 100%;
+    position: relative;
+}
+.widget-subscribe .subscribe-form__fields p{
+    margin-bottom: 0;
+    display: flex;
+}
+.widget-subscribe .subscribe-form__fields input[type="email"]{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #000;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0 5px 0 5px;
+    position: relative;
+    border-bottom: 1px solid rgba(161,133,90,0.3);
+    flex: 1;
+}
+.widget-subscribe .subscribe-form__fields input::placeholder {
+    color: rgba(34, 34, 34, 0.6);
+    opacity: 0.6;
+    font-size: 15px;
+    transform: translateY(-5px);
+}
+.widget-subscribe .subscribe-form__fields button{
+    border: none;
+    outline: none;
+    color: var(--color-logo);
+    background-color: transparent;
+    font-size: 15px;
+    padding: 0;
+    margin-left: 20px;
+    opacity: 0.1;
+    transition: .5s;
+}
+.widget-subscribe .subscribe-form__fields button:hover{
+    opacity: 1;
+}
+/* Widget Email -----------------------*/
+
+/* ----------------------- Widget Most Comment*/
+/*
+    Content
+*/
+.widget-most-comment .post__cat{
+    margin-bottom: 5px;
+}
+.widget-most-comment .post__title{
+    margin-bottom: 10px;
+}
+.widget-most-comment .list-index{
+    font-weight: bold;
+    color: var(--color-text_0-6);
+    font-size: 15px;
+}
+/* Widget Most Comment -----------------------*/
+
+/* ----------------------- Widget post list*/
+/*
+    Content
+*/
+.mnmd-widget-posts-list .post__thumb{
+    height: 70px;
+    margin-right: 20px;
+}
+.mnmd-widget-posts-list .post__excerpt{
+    display: none;
+}
+.mnmd-widget-posts-list .post__title{
+    line-height: 1.5;
+    color: #222222;
+}
+/* ----------------------- Widget post list*/
+
+/* ----------------------- Widget Categories*/
+/*
+    Layout
+*/
+.mnmd-widget-categories .category-tile__text{
+    padding: 0;
+}
+.mnmd-widget-categories .category-tile{
+    box-shadow: none;
+}
+.mnmd-widget-categories .category-tile__wrap{
+    box-shadow: none;
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.mnmd-widget-categories .category-title-image{
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.mnmd-widget-categories .category-title-image:before{
+    content: '';
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid rgba(161,133,91,0.2);
+    border-radius: 50%;
+}
+.mnmd-widget-categories .category-tile__inner{
+    flex: 1;
+    min-height: auto;
+}
+/*
+    Content
+*/
+.mnmd-widget-categories .category-tile:hover .category-tile__name{
+    color: var(--color-logo);
+}
+.mnmd-widget-categories .category-tile__name{
+    background-color: transparent;
+    color: var(--color-text);
+    text-transform: initial;
+    transition: 0.2s;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 0;
+}
+.mnmd-widget-categories .category-tile__name .category-name{
+    display: block;
+    white-space: nowrap;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.mnmd-widget-categories .category-tile__name .line-spacing{
+    display: block;
+    flex: 1;
+    height: 1px;
+    background-color: var(--color-logo);
+    opacity: 0.2;
+    margin: 0 10px;
+}
+.mnmd-widget-categories .category-tile__name .categories-count-number{
+    color: var(--color-logo);
+}
+/* Widget Categories -----------------------*/
+
+
+@media (min-width: 1200px) {
+    /* post main*/
+    .mnmd-main-col{
+        width: 900px;
+    }
+    /* slide bar*/
+    .mnmd-sub-col{
+        width: 300px;
+        float: right;
+    }
+}
+@media (max-width: 1199px) {
+    /* main*/
+    .mnmd-main-col{
+        width: 680px;
+    }
+    /*sub*/
+    .mnmd-sub-col{
+        width: 290px;
+    }
+    /* ----------------------- Widget post list */
+    /*
+        Content
+    */
+    .mnmd-widget-posts-list .post--horizontal .post__thumb{
+        float: none;
+        margin: 0 20px 0 0;
+    }
+    .mnmd-widget-posts-list .post--horizontal .post__text{
+        order: initial;
+    }
+    /* Widget post list ----------------------- */
+
+}
+@media (max-width: 991px) {
+    /* All */
+    .mnmd-main-col{
+        width: 100%;
+        padding-right: 15px;
+    }
+    .mnmd-sub-col{
+        width: 100%;
+        float: left;
+    }
+    .widget:not(:last-child){
+        margin-bottom: 45px;
+    }
+    .widget__title{
+        text-align: center;
+    }
+    /* ----------------------- Widget About */
+    /*
+        Layout
+    */
+    .widget-about .widget__content{
+        flex-direction: initial;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    /*
+        Content
+    */
+    .widget-about .author__avatar{
+        margin-right: 40px;
+    }
+    /* Widget About ----------------------- */
+
+    /* ----------------------- Widget most comment */
+    /*
+        Layout
+    */
+    .widget-most-comment ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .widget-most-comment ul li{
+        width: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /* Widget most comment ----------------------- */
+
+
+    /* ----------------------- Widget post list */
+    /*
+        Layout
+    */
+    .mnmd-widget-posts-list ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .mnmd-widget-posts-list ul li{
+        width: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /*
+        Content
+    */
+    .mnmd-widget-posts-list .post--horizontal .post__thumb{
+        float: none;
+        margin: 0 20px 0 0;
+    }
+    .mnmd-widget-posts-list .post--horizontal .post__text{
+        order: initial;
+    }
+    /* Widget post list ----------------------- */
+
+    /* ----------------------- Widget categories */
+    /*
+        Layout
+    */
+    .mnmd-widget-categories ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .mnmd-widget-categories ul li{
+        width: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /* Widget categories ----------------------- */
+
+    /*sub*/
+    .widget-subscribe .subscribe-form{
+        text-align: center;
+    }
+    .widget-subscribe .subscribe-form__fields{
+        max-width: 75%;
+    }
+}
+@media (max-width: 768px){
+    .widget:not(:last-child){
+        margin-bottom: 40px;
+    }
+    .widget__title{
+        margin-bottom: 30px;
+    }
+    /* ----------------------- Widget Email */
+    /*
+        Content
+    */
+    .widget-subscribe .subscribe-form__fields{
+        max-width: 100%;
+    }
+    /* Widget Email ----------------------- */
+
+    /* ----------------------- Widget most comment */
+    /*
+        Layout
+    */
+    .widget-most-comment ul li{
+        width: 100%;
+    }
+    /*
+        Content
+    */
+
+    /* Widget most comment ----------------------- */
+
+    /* ----------------------- Widget post list */
+    /*
+        Layout
+    */
+    .mnmd-widget-posts-list ul li{
+        width: 100%;
+    }
+    /*
+        Content
+    */
+    .mnmd-widget-posts-list .post--horizontal{
+        justify-content: initial;
+    }
+    .mnmd-widget-posts-list .post--horizontal .post__cat{
+        display: block;
+    }
+    /* Widget post list ----------------------- */
+
+    /* ----------------------- Widget categories */
+    /*
+        Layout
+    */
+    .mnmd-widget-categories ul li{
+        width: 100%;
+    }
+    /* Widget categories ----------------------- */
+}
+@media (max-width: 380px){
+    /* ----------------------- Widget about me */
+    /*
+        Content
+    */
+    .widget-about .author__avatar{
+        width: 70px;
+        height: 70px;
+    }
+    .widget-about .author__task{
+        margin-bottom: 5px;
+    }
+    /* ----------------------- Widget about me */
+}
+@media (max-width: 320px){
+    /* ----------------------- Widget most comment */
+    /*
+        Layout
+    */
+    .widget-most-comment .post__meta{
+        display: none;
+    }
+    /* Widget most comment ----------------------- */
+
+    /* ----------------------- Widget post list */
+    /*
+        Layout
+    */
+    .mnmd-widget-posts-list .post--horizontal .post__cat{
+        display: none;
+    }
+    /* Widget post list ----------------------- */
+}

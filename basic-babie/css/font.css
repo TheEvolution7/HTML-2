@@ -1,0 +1,27 @@
+.post__title, .block-heading__title,
+.karma-single .entry-author__name,
+.mnmd-feature-slider .share-box a,
+.widget__title-text,
+.widget-about .entry-author__name,
+.widget-most-comment .list-index,
+.mnmd-widget-categories .category-tile__name,
+.karma-single .author-box .author-name a,
+.karma-single .comment-form .form-control-custom {
+    font-family: 'Merriweather', serif;
+}
+
+.post__cat, a.post__cat,
+.post__excerpt, .post__readmore .button__readmore,
+.mnmd-post--grid-a .mnmd-post-grid-sub .read-more-link,
+.button__readmore.button-see-more-circle span,
+.mnmd-post--grid-a .mnmd-post-grid-sub .read-more-link,
+.module-404 h3, .navigation--main > li > a, .widget-about .author__task a,
+.widget-subscribe .subscribe-form__fields input[type="email"],
+.widget-subscribe .subscribe-form__fields button, .mnmd-search-full .form-control,
+.mnmd-search-full.On .form-control, .pagination-circle .mnmd-pagination__item,
+.navigation--footer > li > a,
+.mnmd-offcanvas a, .karma-single .entry-author__name span, .karma-single .share-box-author a,
+.karma-single-default .single-header .entry-teaser, .karma-single .single-body p,
+.karma-single .entry-tags ul > li > a, .karma-single-video .single-header .entry-teaser {
+    font-family: 'Source Sans Pro', sans-serif;
+}

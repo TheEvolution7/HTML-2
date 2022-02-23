@@ -1,0 +1,18 @@
+.author-content
+    display: flex
+    align-items: center
+    margin-top: 10px
+    transition: color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1)
+    img 
+        flex: 0 0 40px
+        height: 40px
+        object-fit: cover
+        object-position: top
+        border-radius: 50%
+    h4 
+        margin-left: 10px
+        font-size: 18px
+.portfolioCard.-type-1.-hover
+    &:hover 
+        .author-content 
+            transform: translateX(2rem)

@@ -1,0 +1,264 @@
+/* ----------------------- post--listing-grid */
+/*
+    Layout
+*/
+/*=======list normal=======*/
+.mnmd-post--listing-grid-small .post-list{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: -20px -25px;
+}
+.mnmd-post--listing-grid-small .list-item{
+    width: 50%;
+    padding: 20px 25px;
+}
+/*=======list small=======*/
+.mnmd-post--listing-grid-small .lists-small{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 55px 0;
+    width: 100%;
+}
+.mnmd-post--listing-grid-small .lists-small .list-item{
+    width: calc(100% / 3);
+    padding: 0 15px;
+    margin-bottom: 0;
+}
+/*
+    Content
+*/
+.post--overlay-large.post--overlay .background-img:after {
+    background-color: var(--color-text);
+    opacity: 0.3;
+}
+.post--overlay-large.post--overlay-padding-lg .overlay-item--top-left{
+    top: 35px;
+}
+.post--overlay-large.post--overlay-padding-lg .post__text-inner{
+    padding: 45px 30px;
+}
+/*text*/
+.post--overlay-large .post__cat{
+    margin-bottom: 0;
+    color: #fff;
+    opacity: 1;
+}
+/* post grid d ----------------------- */
+
+@media (max-width: 1199px){
+
+    /* ----------------------- post--listing-list */
+    /*
+        Layout
+    */
+    /*=======list normal=======*/
+    .mnmd-post--listing-grid-small .post-list{
+        margin: -20px -15px;
+    }
+    .mnmd-post--listing-grid-small .list-item{
+        width: 50%;
+        padding: 20px 15px;
+    }
+    /*=======list small=======*/
+    .mnmd-post--listing-grid-small .lists-small{
+        margin: 30px 0;
+    }
+    /*
+        Content
+    */
+    /*=======list normal=======*/
+    .post--overlay-large.post--overlay .post__text{
+        min-height: 400px;
+    }
+    .post--overlay-large .post__title{
+        font-size: 20px;
+    }
+    /*=======list small=======*/
+    .mnmd-post--listing-grid-small .post-list-media-no-thumb-3i .post .media-left{
+        padding-right: 20px;
+    }
+    .mnmd-post--listing-grid-small .post-list-media-no-thumb-3i .post__title {
+        font-size: 15px;
+    }
+    /* post--listing-grid ----------------------- */
+}
+
+@media (max-width: 768px){
+
+    /* ----------------------- post--listing-list */
+    /*
+        Layout
+    */
+    /*=======list small=======*/
+    .mnmd-post--listing-grid-small .lists-small{
+        margin: 30px 0;
+    }
+    .mnmd-post--listing-grid-small .lists-small .list-item{
+        width: 100%;
+        padding: 15px;
+    }
+    .mnmd-post--listing-grid-small .lists-small .list-item:last-child{
+        padding-bottom: 0;
+    }
+    .mnmd-post--listing-grid-small .lists-small .list-item:first-child{
+        padding-top: 0;
+    }
+    /*
+        Content
+    */
+    /*=======list normal=======*/
+    .post--overlay-large.post--overlay-padding-lg .overlay-item--top-left{
+        left: 20px;
+    }
+    .post--overlay-large.post--overlay-padding-lg .post__text-inner{
+        padding: 20px;
+    }
+    .post--overlay-large.post--overlay .post__text{
+        min-height: 290px;
+    }
+    .post--overlay-large .post__title{
+        font-size: 16px;
+    }
+    /*=======list small=======*/
+    .mnmd-post--listing-grid-small .post-list-media-no-thumb-3i .post .media-left{
+        padding-right: 20px;
+        display: none;
+    }
+    .mnmd-post--listing-grid-small .post-list-media-no-thumb-3i .post__title {
+        font-size: 16px;
+    }
+    /* post--listing-grid ----------------------- */
+}
+
+@media (max-width: 576px){
+
+    /* ----------------------- post--listing-list */
+    /*
+        Layout
+    */
+    /*=======list normal=======*/
+    .mnmd-post--listing-grid-small .post-list{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: -17.5px -15px;
+    }
+    .mnmd-post--listing-grid-small .list-item{
+        width: 100%;
+        padding: 17.5px 15px;
+    }
+    /*
+        Content
+    */
+    /*=======list normal=======*/
+    .post--overlay-large.post--overlay-padding-lg .overlay-item--top-left{
+        left: 20px;
+    }
+    .post--overlay-large.post--overlay .post__text{
+        min-height: 300px;
+    }
+    .post--overlay-large .post__title{
+        font-size: 18px;
+        font-weight: bold;
+        max-width: 70%;
+    }
+    /*=======list small=======*/
+    .mnmd-post--listing-grid-small .post-list-media-no-thumb-3i .post .media-left{
+        display: none;
+    }
+    /* post--listing-grid ----------------------- */
+}
+@media (max-width: 480px){
+
+    /* ----------------------- post--listing-list */
+    /*
+        Layout
+    */
+    /*=======list normal=======*/
+    .mnmd-post--listing-grid-small .post-list{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: -15px -15px;
+    }
+    .mnmd-post--listing-grid-small .list-item{
+        padding: 15px 15px;
+    }
+    /*
+        Content
+    */
+    /*=======list normal=======*/
+    .post--overlay-large.post--overlay .post__text{
+        min-height: 260px;
+    }
+    .post--overlay-large .post__title{
+        max-width: 80%;
+    }
+
+    /* post--listing-grid ----------------------- */
+}
+@media (max-width: 420px){
+
+    /* ----------------------- post--listing-list */
+    /*
+        Content
+    */
+    /*=======list normal=======*/
+    .post--overlay-large.post--overlay .post__text{
+        min-height: 250px;
+    }
+    .post--overlay-large .post__title{
+        max-width: 95%;
+    }
+
+    /* post--listing-grid ----------------------- */
+}
+@media (max-width: 380px){
+
+    /* ----------------------- post--listing-list */
+    /*
+        Content
+    */
+    /*=======list normal=======*/
+    .post--overlay-large.post--overlay .post__text{
+        min-height: 230px;
+    }
+    .post--overlay-large .post__title{
+        max-width: 95%;
+    }
+    /*=======list small=======*/
+    .mnmd-post--listing-grid-small .lists-small{
+        margin: 25px 0;
+    }
+    /* post--listing-grid ----------------------- */
+}
+@media (max-width: 320px){
+
+    /* ----------------------- post--listing-list */
+    /*
+        Content
+    */
+    /*=======list normal=======*/
+    .post--overlay-large.post--overlay .post__text{
+        min-height: 200px;
+    }
+    .post--overlay-large .post__title{
+        max-width: 100%;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    /* post--listing-grid ----------------------- */
+}
+
+
