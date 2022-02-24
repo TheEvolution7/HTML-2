@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+
+<html lang="en" class="light">
+<!-- BEGIN: Head -->
+
+<head>
+    <meta charset="utf-8">
+    <link href="dist/images/logo.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Royal Residence Realty - Cronjob General Settings</title>
+    <!-- BEGIN: CSS Assets-->
+    <link rel="stylesheet" href="dist/css/app.css" />
+    <link rel="stylesheet" href="dist/css/custom.min.css">
+    <!-- END: CSS Assets-->
+</head>
+<!-- END: Head -->
+
+<body class="main">
+    <!-- BEGIN: Mobile Menu -->
+    <div class="mobile-menu d-md-none">
+        <div class="mobile-menu-bar">
+            <a href="index.html" class="d-flex me-auto">
+                <img alt="" class="w-6" src="dist/images/logo.png">
+            </a>
+            <a href="javascript:;" id="mobile-menu-toggler" class="mobile-menu-bar__toggler"> <i
+                    data-feather="bar-chart-2" class="w-8 h-8 text-white"></i> </a>
+        </div>
+        <ul class="mobile-menu-wrapper border-top border-theme-2 py-5">
+            <li>
+                <a href="index.html" class="menu">
+                    <div class="menu__icon"> <i data-feather="home"></i> </div>
+                    <div class="menu__title"> Admin Panel </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="menu menu--active">
+                    <div class="menu__icon"> <i data-feather="settings"></i> </div>
+                    <div class="menu__title"> General Settings <i data-feather="chevron-down"
+                            class="menu__sub-icon "></i> </div>
+                </a>
+                <ul class="menu__sub-open">
+                    <li>
+                        <a href="general-basic.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="tag"></i> </div>
+                            <div class="menu__title"> Basic </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="general-company.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="tag"></i> </div>
+                            <div class="menu__title"> Company </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="general-email.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="tag"></i> </div>
+                            <div class="menu__title"> Email </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="general-lead.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="tag"></i> </div>
+                            <div class="menu__title"> Leads </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="general-fb.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="tag"></i> </div>
+                            <div class="menu__title"> Facebook Leads </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="general-sms.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="tag"></i> </div>
+                            <div class="menu__title"> SMS </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="general-cronjob.html" class="menu menu--active">
+                            <div class="menu__icon"> <i data-feather="tag"></i> </div>
+                            <div class="menu__title"> Cronjob </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="general-tag.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="tag"></i> </div>
+                            <div class="menu__title"> Tags </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="general-common.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="tag"></i> </div>
+                            <div class="menu__title"> Common </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" class="menu">
+                    <div class="menu__icon"> <i data-feather="user-check"></i> </div>
+                    <div class="menu__title"> Leads <i data-feather="chevron-down" class="menu__sub-icon "></i> </div>
+                </a>
+                <ul class="">
+                    <li>
+                        <a href="leads-manage.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="tag"></i> </div>
+                            <div class="menu__title"> Manage Leads </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="leads-source.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="tag"></i> </div>
+                            <div class="menu__title"> Sources </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="leads-status.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="tag"></i> </div>
+                            <div class="menu__title"> Statuses </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="leads-web-form.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="tag"></i> </div>
+                            <div class="menu__title"> Web Forms </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" class="menu">
+                    <div class="menu__icon"> <i data-feather="mail"></i> </div>
+                    <div class="menu__title"> Marketing & Mailing <i data-feather="chevron-down"
+                            class="menu__sub-icon "></i> </div>
+                </a>
+                <ul class="">
+                    <li>
+                        <a href="mkt-list.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="tag"></i> </div>
+                            <div class="menu__title"> Lists </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mkt-campaigns.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="tag"></i> </div>
+                            <div class="menu__title"> Campaigns </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" class="menu">
+                    <div class="menu__icon"> <i data-feather="box"></i> </div>
+                    <div class="menu__title"> Email Templates <i data-feather="chevron-down"
+                            class="menu__sub-icon "></i> </div>
+                </a>
+                <ul class="">
+                    <li>
+                        <a href="email-system-template.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="tag"></i> </div>
+                            <div class="menu__title"> System Templates </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="email-custom-template.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="tag"></i> </div>
+                            <div class="menu__title"> Custom Templates </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="email-add-template.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="tag"></i> </div>
+                            <div class="menu__title"> New Templates </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" class="menu">
+                    <div class="menu__icon"> <i data-feather="book"></i> </div>
+                    <div class="menu__title"> Blogs <i data-feather="chevron-down" class="menu__sub-icon "></i> </div>
+                </a>
+                <ul class="">
+                    <li>
+                        <a href="blog-post.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="tag"></i> </div>
+                            <div class="menu__title"> Posts </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="blog-catagories.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="tag"></i> </div>
+                            <div class="menu__title"> Catagories </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" class="menu">
+                    <div class="menu__icon"> <i data-feather="users"></i> </div>
+                    <div class="menu__title"> Agents <i data-feather="chevron-down" class="menu__sub-icon "></i> </div>
+                </a>
+                <ul class="">
+                    <li>
+                        <a href="agent-role.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="tag"></i> </div>
+                            <div class="menu__title"> Roles </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="agent-list.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="tag"></i> </div>
+                            <div class="menu__title"> Agents List </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="agent-add.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="tag"></i> </div>
+                            <div class="menu__title"> Add Agents </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="tern-privacy.html" class="menu">
+                    <div class="menu__icon"> <i data-feather="inbox"></i> </div>
+                    <div class="menu__title"> Terms & Privacy </div>
+                </a>
+            </li>
+            <li>
+                <a href="about.html" class="menu">
+                    <div class="menu__icon"> <i data-feather="inbox"></i> </div>
+                    <div class="menu__title"> About Us Page </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- END: Mobile Menu -->
+    <!-- BEGIN: Top Bar -->
+    <div class="top-bar-boxed border-bottom border-theme-2 dark-border-dark-3 mt-n7 mt-md-n5 mx-n3 mx-sm-n8 px-3 px-sm-8 mb-12">
+        <div class="h-full d-flex align-items-center">
+            <!-- BEGIN: Logo -->
+            <a href="index.html" class="-intro-x d-none d-md-flex me-auto">
+                <img alt="" class="w-16" src="dist/images/logo.png">
+                <span class="text-white fs-lg ms-3">Royal Residence Realty</span> </span>
+            </a>
+            <!-- END: Logo -->
+            <!-- BEGIN: Search -->
+            <div class="intro-x position-relative me-3 me-sm-6">
+                <div class="search d-none d-sm-block">
+                    <input type="text" class="search__input form-control border-transparent" placeholder="Search...">
+                    <i data-feather="search" class="search__icon dark-text-gray-300"></i> 
+                </div>
+                <a class="notification d-sm-none" href="#"> <i data-feather="search" class="notification__icon dark-text-gray-300"></i> </a>
+                <div class="search-result">
+                    <div class="search-result__content">
+                        <div class="search-result__content__title">Pages</div>
+                        <div class="mb-5">
+                            <a href="#" class="d-flex align-items-center">
+                                <div class="w-8 h-8 bg-theme-29 text-theme-10 d-flex align-items-center justify-content-center rounded-pill"> <i class="w-4 h-4" data-feather="inbox"></i> </div>
+                                <div class="ms-3">Mail Settings</div>
+                            </a>
+                            <a href="#" class="d-flex align-items-center mt-2">
+                                <div class="w-8 h-8 bg-theme-30 text-theme-24 d-flex align-items-center justify-content-center rounded-pill"> <i class="w-4 h-4" data-feather="users"></i> </div>
+                                <div class="ms-3">Users & Permissions</div>
+                            </a>
+                            <a href="#" class="d-flex align-items-center mt-2">
+                                <div class="w-8 h-8 bg-theme-31 text-theme-26 d-flex align-items-center justify-content-center rounded-pill"> <i class="w-4 h-4" data-feather="credit-card"></i> </div>
+                                <div class="ms-3">Transactions Report</div>
+                            </a>
+                        </div>
+                        <div class="search-result__content__title">Users</div>
+                        <div class="mb-5">
+                            <a href="#" class="d-flex align-items-center mt-2">
+                                <div class="w-8 h-8 image-fit">
+                                    <img alt="" class="rounded-pill" src="dist/images/icon.jpg">
+                                </div>
+                                <div class="ms-3">Tom Cruise</div>
+                                <div class="ms-auto w-48 truncate text-gray-600 fs-xs text-end">tomcruise@left4code.com</div>
+                            </a>
+                            <a href="#" class="d-flex align-items-center mt-2">
+                                <div class="w-8 h-8 image-fit">
+                                    <img alt="" class="rounded-pill" src="dist/images/icon.jpg">
+                                </div>
+                                <div class="ms-3">Johnny Depp</div>
+                                <div class="ms-auto w-48 truncate text-gray-600 fs-xs text-end">johnnydepp@left4code.com</div>
+                            </a>
+                            <a href="#" class="d-flex align-items-center mt-2">
+                                <div class="w-8 h-8 image-fit">
+                                    <img alt="" class="rounded-pill" src="dist/images/icon.jpg">
+                                </div>
+                                <div class="ms-3">Angelina Jolie</div>
+                                <div class="ms-auto w-48 truncate text-gray-600 fs-xs text-end">angelinajolie@left4code.com</div>
+                            </a>
+                            <a href="#" class="d-flex align-items-center mt-2">
+                                <div class="w-8 h-8 image-fit">
+                                    <img alt="" class="rounded-pill" src="dist/images/icon.jpg">
+                                </div>
+                                <div class="ms-3">Robert De Niro</div>
+                                <div class="ms-auto w-48 truncate text-gray-600 fs-xs text-end">robertdeniro@left4code.com</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END: Search -->
+            <!-- BEGIN: Notifications -->
+            <div class="intro-x dropdown me-4 me-sm-6">
+                <div class="dropdown-toggle notification notification--bullet cursor-pointer" role="button" aria-expanded="false" data-bs-toggle="dropdown"> <i data-feather="bell" class="notification__icon dark-text-gray-300"></i> </div>
+                <div class="notification-content pt-2 dropdown-menu">
+                    <div class="notification-content__box dropdown-content">
+                        <div class="notification-content__title dark-text-gray-300">Notifications</div>
+                        <div class="cursor-pointer position-relative d-flex align-items-center ">
+                            <div class="w-12 h-12 flex-none image-fit me-1">
+                                <img alt="" class="rounded-pill" src="dist/images/icon.jpg">
+                                <div class="w-3 h-3 bg-theme-10 position-absolute end-0 bottom-0 rounded-pill border-2 border-white dark-border-dark-3"></div>
+                            </div>
+                            <div class="ms-2 overflow-hidden">
+                                <div class="d-flex align-items-center">
+                                    <a href="javascript:;" class="fw-medium truncate me-5 dark-text-gray-300">Tom Cruise</a> 
+                                    <div class="fs-xs text-gray-500 ms-auto text-nowrap">06:05 AM</div>
+                                </div>
+                                <div class="w-full truncate text-gray-600 mt-0.5">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 20</div>
+                            </div>
+                        </div>
+                        <div class="cursor-pointer position-relative d-flex align-items-center mt-5">
+                            <div class="w-12 h-12 flex-none image-fit me-1">
+                                <img alt="" class="rounded-pill" src="dist/images/icon.jpg">
+                                <div class="w-3 h-3 bg-theme-10 position-absolute end-0 bottom-0 rounded-pill border-2 border-white dark-border-dark-3"></div>
+                            </div>
+                            <div class="ms-2 overflow-hidden">
+                                <div class="d-flex align-items-center">
+                                    <a href="javascript:;" class="fw-medium truncate me-5 dark-text-gray-300">Johnny Depp</a> 
+                                    <div class="fs-xs text-gray-500 ms-auto text-nowrap">01:10 PM</div>
+                                </div>
+                                <div class="w-full truncate text-gray-600 mt-0.5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem </div>
+                            </div>
+                        </div>
+                        <div class="cursor-pointer position-relative d-flex align-items-center mt-5">
+                            <div class="w-12 h-12 flex-none image-fit me-1">
+                                <img alt="" class="rounded-pill" src="dist/images/icon.jpg">
+                                <div class="w-3 h-3 bg-theme-10 position-absolute end-0 bottom-0 rounded-pill border-2 border-white dark-border-dark-3"></div>
+                            </div>
+                            <div class="ms-2 overflow-hidden">
+                                <div class="d-flex align-items-center">
+                                    <a href="javascript:;" class="fw-medium truncate me-5 dark-text-gray-300">Angelina Jolie</a> 
+                                    <div class="fs-xs text-gray-500 ms-auto text-nowrap">06:05 AM</div>
+                                </div>
+                                <div class="w-full truncate text-gray-600 mt-0.5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#039;s standard dummy text ever since the 1500</div>
+                            </div>
+                        </div>
+                        <div class="cursor-pointer position-relative d-flex align-items-center mt-5">
+                            <div class="w-12 h-12 flex-none image-fit me-1">
+                                <img alt="" class="rounded-pill" src="dist/images/icon.jpg">
+                                <div class="w-3 h-3 bg-theme-10 position-absolute end-0 bottom-0 rounded-pill border-2 border-white dark-border-dark-3"></div>
+                            </div>
+                            <div class="ms-2 overflow-hidden">
+                                <div class="d-flex align-items-center">
+                                    <a href="javascript:;" class="fw-medium truncate me-5 dark-text-gray-300">Robert De Niro</a> 
+                                    <div class="fs-xs text-gray-500 ms-auto text-nowrap">03:20 PM</div>
+                                </div>
+                                <div class="w-full truncate text-gray-600 mt-0.5">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 20</div>
+                            </div>
+                        </div>
+                        <div class="cursor-pointer position-relative d-flex align-items-center mt-5">
+                            <div class="w-12 h-12 flex-none image-fit me-1">
+                                <img alt="" class="rounded-pill" src="dist/images/icon.jpg">
+                                <div class="w-3 h-3 bg-theme-10 position-absolute end-0 bottom-0 rounded-pill border-2 border-white dark-border-dark-3"></div>
+                            </div>
+                            <div class="ms-2 overflow-hidden">
+                                <div class="d-flex align-items-center">
+                                    <a href="javascript:;" class="fw-medium truncate me-5 dark-text-gray-300">Charlize Theron</a> 
+                                    <div class="fs-xs text-gray-500 ms-auto text-nowrap">06:05 AM</div>
+                                </div>
+                                <div class="w-full truncate text-gray-600 mt-0.5">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 20</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END: Notifications -->
+            <!-- BEGIN: Account Menu -->
+            <div class="account-menu intro-x dropdown w-8 h-8">
+                <div class="dropdown-toggle w-8 h-8 rounded-pill overflow-hidden shadow-lg image-fit zoom-in" role="button" aria-expanded="false" data-bs-toggle="dropdown">
+                    <img alt="" src="dist/images/icon.jpg">
+                </div>
+                <div class="dropdown-menu w-56">
+                    <ul class="dropdown-content bg-theme-11 dark-bg-dark-6">
+                        <li class="p-2">
+                            <div class="fw-medium text-white">Theit65</div>
+                            <div class="fs-xs text-theme-13 mt-0.5 dark-text-gray-600">DevOps Engineer</div>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider border-theme-12 dark-border-dark-3">
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item text-white bg-theme-1-hover dark-bg-dark-3-hover"> <i data-feather="user" class="w-4 h-4 me-2"></i> Profile </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item text-white bg-theme-1-hover dark-bg-dark-3-hover"> <i data-feather="edit" class="w-4 h-4 me-2"></i> Add Account </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item text-white bg-theme-1-hover dark-bg-dark-3-hover"> <i data-feather="lock" class="w-4 h-4 me-2"></i> Reset Password </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item text-white bg-theme-1-hover dark-bg-dark-3-hover"> <i data-feather="help-circle" class="w-4 h-4 me-2"></i> Help </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider border-theme-12 dark-border-dark-3">
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item text-white bg-theme-1-hover dark-bg-dark-3-hover"> <i data-feather="toggle-right" class="w-4 h-4 me-2"></i> Logout </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- END: Account Menu -->
+        </div>
+    </div>
+    <!-- END: Top Bar -->
+    <div class="wrapper">
+        <div class="wrapper-box">
+            <!-- BEGIN: Side Menu -->
+            <nav class="side-nav">
+                <ul>
+                    <li>
+                        <a href="index.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="home"></i> </div>
+                            <div class="side-menu__title">Admin Panel</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;.html" class="side-menu side-menu--active side-menu--open">
+                            <div class="side-menu__icon"> <i data-feather="settings"></i> </div>
+                            <div class="side-menu__title">
+                                General Settings
+                                <div class="side-menu__sub-icon"> <i data-feather="chevron-down"></i> </div>
+                            </div>
+                        </a>
+                        <ul class="side-menu__sub-open">
+                            <li>
+                                <a href="general-basic.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="tag"></i> </div>
+                                    <div class="side-menu__title"> Basic </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="general-company.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="tag"></i> </div>
+                                    <div class="side-menu__title"> Company </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="general-email.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="tag"></i> </div>
+                                    <div class="side-menu__title"> Email </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="general-lead.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="tag"></i> </div>
+                                    <div class="side-menu__title"> Leads </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="general-fb.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="tag"></i> </div>
+                                    <div class="side-menu__title"> Facebook Leads </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="general-sms.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="tag"></i> </div>
+                                    <div class="side-menu__title"> SMS </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="general-cronjob.html" class="side-menu side-menu--active side-menu--open">
+                                    <div class="side-menu__icon"> <i data-feather="tag"></i> </div>
+                                    <div class="side-menu__title"> Cronjob </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="general-tag.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="tag"></i> </div>
+                                    <div class="side-menu__title"> Tags </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="general-common.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="tag"></i> </div>
+                                    <div class="side-menu__title"> Common </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="user-check"></i> </div>
+                            <div class="side-menu__title">
+                                Leads
+                                <div class="side-menu__sub-icon"> <i data-feather="chevron-down"></i> </div>
+                            </div>
+                        </a>
+                        <ul class="">
+                            <li>
+                                <a href="leads-manage.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="tag"></i> </div>
+                                    <div class="side-menu__title"> Manage Leads </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="leads-source.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="tag"></i> </div>
+                                    <div class="side-menu__title"> Sources </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="leads-status.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="tag"></i> </div>
+                                    <div class="side-menu__title"> Statuses </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="leads-web-form.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="tag"></i> </div>
+                                    <div class="side-menu__title"> Web Forms </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="mail"></i> </div>
+                            <div class="side-menu__title">
+                                Marketing & Mailing
+                                <div class="side-menu__sub-icon"> <i data-feather="chevron-down"></i> </div>
+                            </div>
+                        </a>
+                        <ul class="">
+                            <li>
+                                <a href="mkt-list.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="tag"></i> </div>
+                                    <div class="side-menu__title"> Lists </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mkt-campaigns.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="tag"></i> </div>
+                                    <div class="side-menu__title"> Campaigns </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="box"></i> </div>
+                            <div class="side-menu__title">
+                                Email Templates
+                                <div class="side-menu__sub-icon"> <i data-feather="chevron-down"></i> </div>
+                            </div>
+                        </a>
+                        <ul class="">
+                            <li>
+                                <a href="email-system-template.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="tag"></i> </div>
+                                    <div class="side-menu__title"> System Templates </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="email-custom-template.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="tag"></i> </div>
+                                    <div class="side-menu__title"> Custom Templates </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="email-add-template.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="tag"></i> </div>
+                                    <div class="side-menu__title"> New Templates </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="book"></i> </div>
+                            <div class="side-menu__title">
+                                Blogs
+                                <div class="side-menu__sub-icon"> <i data-feather="chevron-down"></i> </div>
+                            </div>
+                        </a>
+                        <ul class="">
+                            <li>
+                                <a href="blog-post.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="tag"></i> </div>
+                                    <div class="side-menu__title"> Posts </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog-catagories.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="tag"></i> </div>
+                                    <div class="side-menu__title"> Catagories </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="users"></i> </div>
+                            <div class="side-menu__title">
+                                Agents
+                                <div class="side-menu__sub-icon"> <i data-feather="chevron-down"></i> </div>
+                            </div>
+                        </a>
+                        <ul class="">
+                            <li>
+                                <a href="agent-role.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="tag"></i> </div>
+                                    <div class="side-menu__title"> Roles </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="agent-list.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="tag"></i> </div>
+                                    <div class="side-menu__title"> Agents List </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="agent-add.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="tag"></i> </div>
+                                    <div class="side-menu__title"> Add Agents </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="tern-privacy.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="inbox"></i> </div>
+                            <div class="side-menu__title"> Terms & Privacy </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="inbox"></i> </div>
+                            <div class="side-menu__title"> About Us Page </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- END: Side Menu -->
+            <!-- BEGIN: Content -->
+            <div class="content">
+                <div class="intro-y col-12 mt-5">
+                    <div class="intro-y box p-5">
+                        <div class="grid columns-12 gap-4 gap-y-5 mt-3">
+                            <div class="intro-y g-col-12 p-5 bg-gray-200">
+                                <p>
+                                    CRON COMMAND: wget -q -O- https://manageyourlead.com/cron/index
+                                </p>
+                            </div>
+                            <div class="intro-y g-col-12">
+                                <label for="" class="form-label">Account SidCampaign Emails Sending Per Hour?</label>
+                                <input id="" type="number" class="form-control" value="100">
+                            </div>
+                            <div class="intro-y g-col-12 d-flex align-items-center justify-content-center mt-5">
+                                <button class="btn btn-primary w-32 ms-2">Settings Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END: Content -->
+        </div>
+    </div>
+    
+    <script
+        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBG7gNHAhDzgYmq4-EHvM4bqW1DNj2UCuk&amp;libraries=places">
+    </script>
+    <script src="dist/js/app.js"></script>
+    <!-- END: JS Assets-->
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+.mobile-menu 
+  .menu
+    color: rgba(var(--bs-theme-33-rgb),var(--bs-text-opacity))
+    &.menu--active
+      color: rgba(var(--bs-white-rgb),var(--bs-text-opacity))
+
+.table
+  &>:not(caption)>*>*
+    padding: unset 
+  th
+    padding: .75rem 1.5rem .75rem .5rem
+  td
+    padding: .75rem 1.25rem
+  th,td  
+    vertical-align: middle     
+    &:hover
+      background-color: rgba(var(--bs-gray-200-rgb),var(--bs-bg-opacity))
+    .table-content
+      position: relative
+      display: flex
+      justify-content: center
+      align-items: center
+      &.active
+        .table-content__icon
+          color: #2d3748
+      .table-content__icon
+        position: absolute
+        top: 0
+        right: -1.5rem
+        display: flex
+        align-items: center
+        bottom: 0
+        color: rgba(#2d3748, .3)
+    .check-input
+      border-radius: 50rem
+      cursor: pointer
+      height: 24px
+      padding: 1px
+      position: relative
+      width: 38px
+      border: 1px solid #e2e8f0
+      &:before
+        border-radius: 50%
+        bottom: 0
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, .25)
+        content: ""
+        height: 22px
+        margin-bottom: auto
+        margin-top: auto
+        position: absolute
+        top: 0
+        transition: all .2s ease-in-out
+        width: 22px
+  &.table-manage
+    td
+      padding: .75rem
+  &.table-manage-2
+    th,td
+      padding: .75rem 
+  &.table-add-role
+    th,td
+      padding: .75rem 1.25rem
+    td
+      width: 50%
+      &.role-checkbox
+        position: relative
+        &::before
+          --bs-bg-opacity: 1
+          background-color: rgba(var(--bs-gray-200-rgb),var(--bs-bg-opacity))
+          bottom: 0
+          content: ""
+          height: 2rem
+          left: 0
+          margin-bottom: auto
+          margin-top: auto
+          position: absolute
+          top: 0
+          width: 1px
+  &.table-tab
+    tr
+      border-bottom: 1px solid #cbd5e0
+      &:last-child
+        border-bottom: unset
+    th,td
+      border: unset
+    td
+      text-align: right
+  &.table-custom-template
+    td
+      padding: 1.25rem
+
+.input-group
+  .input-group-text
+    border-bottom-right-radius: 0
+    border-top-right-radius: 0
+  .input-group-delete
+    display: flex
+    align-items: center
+    background-color: #f7fafc
+    border: 1px solid #e2e8f0
+    border-radius: .375rem
+    line-height: 1.429
+    padding: .5rem .75rem
+    border-bottom-right-radius: 0
+    border-top-right-radius: 0
+  .input-group-color
+    align-items: center
+    background-color: #f7fafc
+    border: 1px solid #e2e8f0
+    border-radius: .375rem
+    display: flex
+    line-height: 1.429
+    padding: .5rem .75rem
+    i
+      display: inline-block
+      cursor: pointer
+      height: 16px
+      vertical-align: text-top
+      width: 16px
+
+#box_slide_check_contact,
+#box_slide_check_lead
+  display: none  
+.table-campaign-add
+  tr
+    border-bottom: 1px solid #cbd5e0
+    &:last-child
+      border-bottom: unset
+  th,td 
+    border-bottom-width: 0px
+  td
+    float: right
+
+
+.editor-box  
+  .ck-editor
+    h2
+      display: block
+      font-size: 2rem
+      margin-block-start: 0.67em
+      margin-block-end: 0.67em
+      margin-inline-start: 0px
+      margin-inline-end: 0px
+      font-weight: bold
+    h3
+      display: block
+      font-size: 1.5rem
+      margin-block-start: 0.83em
+      margin-block-end: 0.83em
+      margin-inline-start: 0px
+      margin-inline-end: 0px
+      font-weight: bold
+    p
+      isplay: block
+      margin-block-start: 1em
+      margin-block-end: 1em
+      margin-inline-start: 0px
+      margin-inline-end: 0px
+    blockquote
+      display: block
+      margin-block-start: 1em
+      margin-block-end: 1em
+      margin-inline-start: 40px
+      margin-inline-end: 40px
+      border-left: unset
+    a
+      font-weight: bold
+    .text-green
+      color: #339966
+    .text-blue
+      color: #0000ff
+    img
+      width: 350px
+
+.form-check-inline
+  display: inline-block
+  .form-check-input
+    float: unset
+
+.modal-dialog-lg
+  @media screen and ( min-width: 992px )
+    max-width: 900px

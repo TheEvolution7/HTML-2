@@ -1,0 +1,286 @@
+.mobile-menu .menu {
+  color: rgba(var(--bs-theme-33-rgb), var(--bs-text-opacity));
+}
+
+.mobile-menu .menu.menu--active {
+  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity));
+}
+
+.table > :not(caption) > * > * {
+  padding: unset;
+}
+
+.table th {
+  padding: .75rem 1.5rem .75rem .5rem;
+}
+
+.table td {
+  padding: .75rem 1.25rem;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+}
+
+.table th:hover, .table td:hover {
+  background-color: rgba(var(--bs-gray-200-rgb), var(--bs-bg-opacity));
+}
+
+.table th .table-content, .table td .table-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.table th .table-content.active .table-content__icon, .table td .table-content.active .table-content__icon {
+  color: #2d3748;
+}
+
+.table th .table-content .table-content__icon, .table td .table-content .table-content__icon {
+  position: absolute;
+  top: 0;
+  right: -1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0;
+  color: rgba(45, 55, 72, 0.3);
+}
+
+.table th .check-input, .table td .check-input {
+  border-radius: 50rem;
+  cursor: pointer;
+  height: 24px;
+  padding: 1px;
+  position: relative;
+  width: 38px;
+  border: 1px solid #e2e8f0;
+}
+
+.table th .check-input:before, .table td .check-input:before {
+  border-radius: 50%;
+  bottom: 0;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+  content: "";
+  height: 22px;
+  margin-bottom: auto;
+  margin-top: auto;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  width: 22px;
+}
+
+.table.table-manage td {
+  padding: .75rem;
+}
+
+.table.table-manage-2 th, .table.table-manage-2 td {
+  padding: .75rem;
+}
+
+.table.table-add-role th, .table.table-add-role td {
+  padding: .75rem 1.25rem;
+}
+
+.table.table-add-role td {
+  width: 50%;
+}
+
+.table.table-add-role td.role-checkbox {
+  position: relative;
+}
+
+.table.table-add-role td.role-checkbox::before {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-gray-200-rgb), var(--bs-bg-opacity));
+  bottom: 0;
+  content: "";
+  height: 2rem;
+  left: 0;
+  margin-bottom: auto;
+  margin-top: auto;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.table.table-tab tr {
+  border-bottom: 1px solid #cbd5e0;
+}
+
+.table.table-tab tr:last-child {
+  border-bottom: unset;
+}
+
+.table.table-tab th, .table.table-tab td {
+  border: unset;
+}
+
+.table.table-tab td {
+  text-align: right;
+}
+
+.table.table-custom-template td {
+  padding: 1.25rem;
+}
+
+.input-group .input-group-text {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.input-group .input-group-delete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: .375rem;
+  line-height: 1.429;
+  padding: .5rem .75rem;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.input-group .input-group-color {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: .375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.429;
+  padding: .5rem .75rem;
+}
+
+.input-group .input-group-color i {
+  display: inline-block;
+  cursor: pointer;
+  height: 16px;
+  vertical-align: text-top;
+  width: 16px;
+}
+
+#box_slide_check_contact,
+#box_slide_check_lead {
+  display: none;
+}
+
+.table-campaign-add tr {
+  border-bottom: 1px solid #cbd5e0;
+}
+
+.table-campaign-add tr:last-child {
+  border-bottom: unset;
+}
+
+.table-campaign-add th, .table-campaign-add td {
+  border-bottom-width: 0px;
+}
+
+.table-campaign-add td {
+  float: right;
+}
+
+.editor-box .ck-editor h2 {
+  display: block;
+  font-size: 2rem;
+  -webkit-margin-before: 0.67em;
+          margin-block-start: 0.67em;
+  -webkit-margin-after: 0.67em;
+          margin-block-end: 0.67em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.editor-box .ck-editor h3 {
+  display: block;
+  font-size: 1.5rem;
+  -webkit-margin-before: 0.83em;
+          margin-block-start: 0.83em;
+  -webkit-margin-after: 0.83em;
+          margin-block-end: 0.83em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.editor-box .ck-editor p {
+  isplay: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+
+.editor-box .ck-editor blockquote {
+  display: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 40px;
+          margin-inline-start: 40px;
+  -webkit-margin-end: 40px;
+          margin-inline-end: 40px;
+  border-left: unset;
+}
+
+.editor-box .ck-editor a {
+  font-weight: bold;
+}
+
+.editor-box .ck-editor .text-green {
+  color: #339966;
+}
+
+.editor-box .ck-editor .text-blue {
+  color: #0000ff;
+}
+
+.editor-box .ck-editor img {
+  width: 350px;
+}
+
+.form-check-inline {
+  display: inline-block;
+}
+
+.form-check-inline .form-check-input {
+  float: unset;
+}
+
+@media screen and (min-width: 992px) {
+  .modal-dialog-lg {
+    max-width: 900px;
+  }
+}
+/*# sourceMappingURL=custom.css.map */
